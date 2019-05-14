@@ -1,0 +1,453 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {	
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: column nowrap;
+	background: url(media/background.svg);
+	background-position: 0 0;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	color: white;
+	width: 100%;
+	height: 100%;
+}
+
+.container h1 {
+	margin: 0;
+	font-size: 3rem;
+}
+
+.container p {
+	font-size: 1.5rem;
+	margin: 0;
+}
+
+.container a {
+	color: white;
+	text-decoration: none;
+}
+
+.holdsIcons {
+	margin: 1rem;	
+}
+
+.holdsIcons svg {
+	font-size: 3rem;
+}
+
+.top, .bot, .contactIcons {
+	position: relative;
+	display: flex;
+	margin: 1rem;
+	top: 0;
+}
+
+.bot, .main {
+	transition: cubic-bezier(1, 0.63, 0.1, 0.43) 2s;
+}
+
+.main {
+	position: relative;
+}
+
+.holdsIcons button {
+	background-color: rgba(255, 255, 255, .1);
+	color: white;
+	border-radius: 100%;
+	border: 1px solid white;
+	width: 5rem;
+	height: 5rem;
+}
+
+.holdsIcons button:hover {
+	opacity: .8;
+	background-color: mediumseagreen;
+}
+
+.holdsIcons button:focus {
+	outline: none;
+}
+
+.holdsIcons span {
+	display: block;
+	font-size: 1.5rem;
+}
+
+.line {
+	height: 2px;
+	background-color: white;
+	margin: 5%;
+}
+
+.footer {
+	position: absolute;
+	bottom: 2%;
+	left: 0;
+	right: 0;
+}
+
+
+/* Dynamic content block */
+.content {
+	border: 2px solid white;
+	padding: 2.5%;
+	display: none;
+}
+
+.content h2 {
+	margin-top: 0;
+}
+
+.content h3 {
+	margin-bottom: 0;
+	text-decoration: underline;
+}
+
+.content p {
+	font-size: 1rem;
+}
+
+.content span {
+	font-size: 1rem;
+}
+
+.content svg {
+	font-size: 1.5rem;
+}
+
+.content div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content .holdsIcons {
+	margin: .5rem;
+}
+
+.content div div {
+	flex-flow: column wrap;
+}
+
+/* Contact box */
+.bot .contact svg {
+	font-size: 2.5rem;
+} 
+
+/* Added by JavaScript */
+.visible {
+	display: block;
+}
+
+.relative {
+	position: relative;
+}
+
+.absolute {
+	position: absolute;
+}
+
+.bot.content-shown > .holdsIcons {
+	display: none;
+}
+
+.header {
+	position: relative;
+	top: 0;
+	left: 0;
+	transition: 2s;
+}
+
+.topLeft {
+	position: absolute;
+	margin: .5rem;
+	text-align: left;
+	left: 0;
+	top: 0;
+}
+
+.topLeft h1 {
+	font-size: 2rem;
+}
+
+.topLeft p {
+	font-size: 1.2rem;
+}
+
+.topRight {
+	position: absolute;
+	transition: .8s;
+	margin: .5rem;
+	top: 0;
+	right: 0;
+}
+
+.topRight svg {
+	font-size: 2.2rem;
+}
+
+.topRight button {
+	height: 3.6rem;
+	width: 3.6rem;
+}
+
+.topRight span {
+	font-size: 1.2rem;
+}
+
+.reposition {
+	position: absolute;
+	transition: 2s;
+	margin: 0;
+	top: 12%;
+}
+
+/* Media queries for smaller screens */
+@media only screen and (max-width: 625px) {
+	.topLeft h1 {
+		font-size: 1.8rem;
+	}
+
+	.topLeft p {
+		font-size: 1rem;
+	}
+
+	.topRight {
+		transition: 1s;
+		right: 0;
+		margin: 0;
+		align-self: flex-end;
+	}
+
+	.topRight svg {
+		font-size: 2rem;
+	}
+
+	.topRight button {
+		height: 3.4rem;
+		width: 3.4rem;
+	}
+
+	.topRight span {
+		font-size: 1rem;
+	}
+
+	.reposition {
+		margin: 0;
+		top: 11%;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	.topLeft h1 {
+		font-size: 2rem;
+	}
+
+	.topLeft p {
+		font-size: 1rem;
+	}
+
+	.topLeft span {
+		font-size: 1rem;
+	}
+
+	.holdsIcons {
+		margin: .4rem;
+	}
+
+	.holdsIcons svg {
+		font-size: 2rem;
+	}
+
+	.holdsIcons button {
+		width: 3.5rem;
+		height: 3.5rem;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.topLeft h1 {
+		font-size: 1.6rem;
+	}
+
+	.topLeft p {
+		font-size: .9rem;
+	}
+
+	.topRight {
+		margin: 0;
+		align-self: flex-end;
+	}
+
+	.topRight svg {
+		font-size: 1.8rem;
+	}
+
+	.topRight button {
+		height: 3.2rem;
+		width: 3.2rem;
+	}
+
+	.topRight span {
+		font-size: .9rem;
+	}
+
+	.reposition {
+		margin: 0;
+		top: 10%;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.topLeft h1 {
+		font-size: 1.4rem;
+	}
+
+	.topLeft p {
+		font-size: .7rem;
+	}
+
+	.topLeft span {
+		font-size: .7rem;
+	}
+
+	.holdsIcons {
+		margin: .2rem;
+	}
+
+	.holdsIcons svg {
+		font-size: 1.4rem;
+	}
+
+	.reposition {
+		top: 9%;
+	}
+
+	.holdsIcons button {
+		width: 2.9rem;
+		height: 2.9rem;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.topLeft {
+		display: none;
+	}
+
+	.topRight {
+		align-self: auto;
+	}
+	
+	.topRight svg {
+		font-size: 2.5rem;
+	}
+
+	.topRight button {
+		margin: .2rem;
+		height: 4rem;
+		width: 4rem;
+	}
+
+	.topRight span {
+		font-size: 1.3rem;
+	}
+
+	.holdsIcons {
+		margin: .75rem;
+	}
+
+	.holdsIcons svg {
+		font-size: 2.5rem;
+	}
+
+	.holdsIcons button {
+		width: 4rem;
+		height: 4rem;
+	}
+
+	.holdsIcons span {
+		font-size: 1rem;
+	}
+	
+	.reposition {
+		top: 16%;
+	}
+
+	.footer span {
+		font-size: .9rem;
+	}
+}
+
+@media only screen and (max-width: 350px) {
+	.container h1 {
+		font-size: 2rem;
+	}
+
+	.container p {
+		font-size: 1rem;
+	}
+
+	.topLeft {
+		display: none;
+	}
+
+	.topRight {
+		align-self: auto;
+	}
+	
+	.topRight svg {
+		font-size: 2rem;
+	}
+
+	.topRight button {
+		margin: .1rem;
+		height: 3.5rem;
+		width: 3.5rem;
+	}
+
+	.topRight span {
+		font-size: 1rem;
+	}
+
+	.holdsIcons {
+		margin: .5rem;
+	}
+
+	.holdsIcons svg {
+		font-size: 1.6rem;
+		font-size: 50;
+	}
+
+	.holdsIcons button {
+		width: 2.8rem;
+		height: 2.8rem;
+	}
+
+	.holdsIcons span {
+		font-size: .8rem;
+	}
+	
+	.reposition {
+		top: 15%;
+	}
+
+	.footer span {
+		font-size: .7rem;
+	}
+}
