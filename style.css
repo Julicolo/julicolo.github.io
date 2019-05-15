@@ -4,13 +4,14 @@
 	box-sizing: border-box;
 }
 
-html, body {
-	height: 100%;
+html {
+	min-height: 100vh;
 }
 
 body {	
 	padding: 0;
 	margin: 0;
+	min-height: 100vh;
 }
 
 .container {
@@ -25,7 +26,8 @@ body {
 	text-align: center;
 	color: white;
 	width: 100%;
-	height: 100%;
+	min-height: 100vh;
+	background-repeat: repeat;
 }
 
 .container h1 {
@@ -55,11 +57,6 @@ body {
 	position: relative;
 	display: flex;
 	margin: 1rem;
-	top: 0;
-}
-
-.bot, .main {
-	transition: cubic-bezier(1, 0.63, 0.1, 0.43) 2s;
 }
 
 .main {
@@ -96,10 +93,7 @@ body {
 }
 
 .footer {
-	position: absolute;
-	bottom: 2%;
-	left: 0;
-	right: 0;
+	margin-bottom: 2%;
 }
 
 /* Dynamic content block */
@@ -169,7 +163,6 @@ body {
 	position: relative;
 	top: 0;
 	left: 0;
-	transition: 2s;
 }
 
 .topLeft {
@@ -190,7 +183,6 @@ body {
 
 .topRight {
 	position: absolute;
-	transition: .8s;
 	margin: .5rem;
 	top: 0;
 	right: 0;
@@ -210,10 +202,8 @@ body {
 }
 
 .reposition {
-	position: absolute;
-	transition: 2s;
-	margin: 0;
-	top: 12%;
+	margin-top: 90px;
+	margin-bottom: auto;
 }
 
 /* Projects tab */
@@ -241,6 +231,7 @@ body {
 	background-color: black;
 	color: white;
 	font-size: .8rem;
+	outline: none;
 }
 
 /* Media queries for smaller screens */
@@ -254,7 +245,6 @@ body {
 	}
 
 	.topRight {
-		transition: 1s;
 		right: 0;
 		margin: 0;
 		align-self: flex-end;
@@ -273,10 +263,6 @@ body {
 		font-size: 1rem;
 	}
 
-	.reposition {
-		margin: 0;
-		top: 11%;
-	}
 }
 
 @media only screen and (max-width: 550px) {
@@ -332,11 +318,6 @@ body {
 	.topRight span {
 		font-size: .9rem;
 	}
-
-	.reposition {
-		margin: 0;
-		top: 10%;
-	}
 }
 
 @media only screen and (max-width: 450px) {
@@ -358,10 +339,6 @@ body {
 
 	.holdsIcons svg {
 		font-size: 1.4rem;
-	}
-
-	.reposition {
-		top: 9%;
 	}
 
 	.holdsIcons button {
@@ -410,10 +387,6 @@ body {
 		font-size: 1rem;
 	}
 	
-	.reposition {
-		top: 16%;
-	}
-
 	.footer span {
 		font-size: .9rem;
 	}
@@ -466,10 +439,6 @@ body {
 
 	.holdsIcons span {
 		font-size: .8rem;
-	}
-	
-	.reposition {
-		top: 15%;
 	}
 
 	.footer span {
