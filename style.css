@@ -102,7 +102,6 @@ body {
 	right: 0;
 }
 
-
 /* Dynamic content block */
 .content {
 	border: 2px solid white;
@@ -116,7 +115,6 @@ body {
 
 .content h3 {
 	margin-bottom: 0;
-	text-decoration: underline;
 }
 
 .content p {
@@ -216,6 +214,33 @@ body {
 	transition: 2s;
 	margin: 0;
 	top: 12%;
+}
+
+/* Projects tab */
+.projectCard {
+	border-top: 2px solid white;
+	flex-flow: column wrap;
+	padding: 10px 0 15px;
+}
+
+.description {
+	display: block;
+}
+
+.projects .languages {
+	flex-flow: row wrap;
+}
+
+.projects .holdsButtons {
+	flex-flow: row wrap;
+}
+
+.projects button {
+	margin: .5rem;
+	padding: .6rem;
+	background-color: black;
+	color: white;
+	font-size: .8rem;
 }
 
 /* Media queries for smaller screens */
