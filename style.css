@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 }
 
-html, body, container {
+html, body, .container {
 	min-height: 100vh;
 }
 
