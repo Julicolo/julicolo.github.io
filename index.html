@@ -7,7 +7,7 @@
 	<link rel="canonical" href="https://julicolo.github.io">
 	<meta name="author" content="Julio Schilders">
 	<meta name="description" content="Portfolio & resume of a junior web developer in training, 
-		located in Breda and studying in Eindhoven!	Interested in learning React.js & Node.js">
+		located in Breda and studying in Eindhoven!	Interested in learning React & Node">
 	<meta name="google-site-verification" content="fRzCbxS79kqRweZqek4u6yamnn1dyraAeauAu60XCC0" />
 	<!-- Twitter -->
 	<meta name="twitter:card" content="summary">
@@ -22,7 +22,7 @@
 	<meta property="og:title" content="Portfolio Website Julio Schilders">
 	<meta property="og:image" itemprop="image" content="media/leaf.ico" type="image/x-icon">
 	<meta property="og:description" content="Portfolio & resume of a junior web developer in training, 
-    		located in Breda and studying in Eindhoven!	Interested in learning React.js & Node.js"">
+    		located in Breda and studying in Eindhoven!	Interested in learning React.js & Node.js">
 	<meta property="og:image" content="media/leaf.ico" />
 	<!-- Stylesheet(s) & Script(s) -->
 	<link rel="shortcut icon" href="media/leaf.ico" type="image/x-icon">
@@ -34,11 +34,13 @@
 <body>
 	<div class="container" style="background-position:0 0;">
 		<header class="header">
-			<section>
-				<h1>Julio Schilders</h1>
-				<p>Web Development Student</p>
-				<p>REA College, Eindhoven</p>
-			</section>
+			<a href="#" rel="noopener noreferrer">
+				<section>
+					<h1>Julio Schilders</h1>
+					<p>Web Development Student</p>
+					<p>REA College, Eindhoven</p>
+				</section>
+			</a>
 		</header>
 		<div class="top">
 			<div class="holdsIcons">
@@ -70,27 +72,41 @@
 		</div>
 		<main class="main">
 			<div class="line"></div>
-			<div class="bot">
-				<div class="holdsIcons">
-					<i class="fab fa-html5"></i>
-					<span>HTML</span>
-				</div>
-				<div class="holdsIcons">
-					<i class="fab fa-css3-alt"></i>
-					<span>CSS</span>
-				</div>
-				<div class="holdsIcons">
-					<i class="fab fa-js"></i>
-					<span>JavaScript</span>
-				</div>
-				<div class="holdsIcons">
-					<i class="fab fa-react"></i>
-					<span>React</span>
-				</div>
-				<div class="holdsIcons">
-					<i class="fab fa-php"></i>
-					<span>PHP</span>
-				</div>
+				<div class="bot">
+					<div class="holdsIcons">
+						<div class="row">
+						<div class="holdsIcons">
+							<i class="fab fa-html5"></i>
+							<span>HTML</span>
+						</div>
+						<div class="holdsIcons">
+							<i class="fab fa-css3-alt"></i>
+							<span>CSS</span>
+						</div>
+						<div class="holdsIcons">
+							<i class="fab fa-js"></i>
+							<span>JavaScript</span>
+						</div>
+						<div class="holdsIcons">
+							<i class="fab fa-php"></i>
+							<span>PHP</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="holdsIcons">
+							<i class="fab fa-react"></i>
+							<span>React</span>
+						</div>
+						<div class="holdsIcons">
+							<i class="fab fa-node-js"></i>
+							<span>Node</span>	
+						</div>
+						<div class="holdsIcons">
+							<i class="fab fa-sass"></i>
+							<span>SASS</span>	
+						</div>
+					</div>	
+				</div>					
 				<!-- Hidden by default -->
 				<div class="content projects">
 					<h2>Projects</h2>
@@ -100,6 +116,9 @@
 							Users are able to add and remove todo's, they are also able to clear the list as a whole.<br>
 							There is a message displayed depending on how many todo's they have done.
 						</p>
+						<div class="screenshot">
+							<img src="media/todo.png" alt="filler" width="450" height="300">
+						</div>
 						<div class="languages">
 							<div class="holdsIcons">
 								<i class="fab fa-react"></i>
@@ -125,6 +144,9 @@
 							Website made for a fictional client, that specialises in selling window frames.<br>
 							This website is made with Wordpress as a CMS.
 						</p>
+						<div class="screenshot">
+							<img src="media/kukomo.png" alt="filler" width="450" height="300">
+						</div>
 						<div class="languages">
 							<div class="holdsIcons">
 								<i class="fab fa-wordpress"></i>
@@ -142,14 +164,17 @@
 						<p>
 							Website made for a fictional client, to show bedding and furniture for the bedroom.
 						</p>
+						<div class="screenshot">
+							<img src="media/embed.png" alt="filler" width="450" height="300">
+						</div>
 						<div class="languages">
 							<div class="holdsIcons">
 							<i class="fab fa-html5"></i>
-							<span>HTML5</span>
+							<span>HTML</span>
 						</div>
 						<div class="holdsIcons">
 							<i class="fab fa-css3-alt"></i>
-							<span>CSS3</span>								
+							<span>CSS</span>								
 						</div>
 						<div class="holdsIcons">
 							<i class="fab fa-js"></i>
@@ -168,14 +193,17 @@
 					<div class="projectCard">
 						<h3>Final assignment CSS</h3>
 						<p>My first website, this website has not been touched ever since so there are some minor bugs!</p>
+						<div class="screenshot">
+							<img src="media/firstsite.png" alt="filler" width="450" height="300">
+						</div>
 						<div class="languages">
 							<div class="holdsIcons">
 							<i class="fab fa-html5"></i>
-							<span>HTML5</span>
+							<span>HTML</span>
 						</div>
 						<div class="holdsIcons">
 							<i class="fab fa-css3-alt"></i>
-							<span>CSS3</span>								
+							<span>CSS</span>								
 						</div>
 						</div>
 						<div class="holdsButtons">
@@ -222,19 +250,16 @@
 							<i class="fab fa-react"></i>
 							<span>React.Js</span>
 						</div>
+						<div class="holdsIcons">
+							<i class="fab fa-node-js"></i>
+							<span>Node</span>	
+						</div>
 					</div>
 					<h3>Other</h3>
 					<div class="other">
 						<div class="holdsIcons">
 							<i class="fab fa-sass"></i>
 							<span>SASS</span>	
-						</div>
-					</div>
-					<h3>Stuff that I'm learning right now or that I'd like to learn in the (near) future</h3>
-					<div class="future">
-						<div class="holdsIcons">
-							<i class="fab fa-node-js"></i>
-							<span>Node.Js</span>	
 						</div>
 					</div>
 				</div>

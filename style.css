@@ -1,5 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
+:root {
+	--nice: #4f7aa5;
+	--text: #45515d;
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -20,10 +25,11 @@ body {
 	justify-content: center;
 	flex-flow: column nowrap;
 	background: url(media/background.svg);
+	background-size: 75%;
 	background-position: 0 0;
 	font-family: 'Roboto', sans-serif;
 	text-align: center;
-	color: white;
+	color: var(--text);
 	width: 100%;
 	background-repeat: repeat;
 }
@@ -33,13 +39,17 @@ body {
 	font-size: 3rem;
 }
 
+.container h2 {
+	color: var(--nice);
+}
+
 .container p {
 	font-size: 1.5rem;
 	margin: 0;
 }
 
 .container a {
-	color: white;
+	color: var(--nice);
 	text-decoration: none;
 }
 
@@ -55,24 +65,41 @@ body {
 	position: relative;
 	display: flex;
 	margin: 1rem;
+	color: var(--nice);
+}
+
+.bot.content-shown {
+	color: var(--text);
 }
 
 .main {
 	position: relative;
 }
 
+.row {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.languages, .frameworks, .other, .future {
+	color: var(--nice);
+}
+.holdsIcons {
+	flex-flow: row wrap;
+}
 .holdsIcons button {
-	background-color: rgba(255, 255, 255, .1);
-	color: white;
+	background-color: rgba(0, 0, 0, .1);
+	color: var(--nice);
 	border-radius: 100%;
-	border: 1px solid white;
+	border: 1px solid var(--nice);
 	width: 5rem;
 	height: 5rem;
 }
 
 .holdsIcons button:hover {
 	opacity: .8;
-	background-color: mediumseagreen;
+	background-color: #b6f3d1;
 }
 
 .holdsIcons button:focus {
@@ -86,8 +113,17 @@ body {
 
 .line {
 	height: 2px;
-	background-color: white;
+	background-color: var(--nice);
 	margin: 5%;
+}
+
+.screenshot img {
+	max-width: 100%;
+	margin: .75rem 0;
+}
+
+.screen img:hover {
+
 }
 
 .footer {
@@ -96,7 +132,7 @@ body {
 
 /* Dynamic content block */
 .content {
-	border: 2px solid white;
+	border: 2px solid var(--nice);
 	padding: 2.5%;
 	display: none;
 }
@@ -205,8 +241,13 @@ body {
 }
 
 /* Projects tab */
+.projectCard:first-of-type {
+	border-top: none;
+}
+
+
 .projectCard {
-	border-top: 2px solid white;
+	border-top: 2px solid var(--nice);
 	flex-flow: column wrap;
 	padding: 10px 0 15px;
 }
@@ -226,14 +267,19 @@ body {
 .projects button {
 	margin: .5rem;
 	padding: .6rem;
-	background-color: black;
-	color: white;
+	background-color: #e8f3ff;
+	color: var(--text);
+	border: 1px solid #4f7aa5;
 	font-size: .8rem;
 	outline: none;
 }
 
 /* Media queries for smaller screens */
 @media only screen and (max-width: 625px) {
+	.container {
+		background-size: 225%;
+	}
+
 	.topLeft h1 {
 		font-size: 1.8rem;
 	}
@@ -442,4 +488,3 @@ body {
 	.footer span {
 		font-size: .7rem;
 	}
-}
