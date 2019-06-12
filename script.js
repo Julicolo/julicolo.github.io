@@ -49,8 +49,4 @@ window.addEventListener('DOMContentLoaded', () => {
 			toggleContent(button.name);			
 		});
 	});
-
-
-	toggleContent('projects');
-
 });
