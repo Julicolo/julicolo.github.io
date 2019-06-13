@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+HK&display=swap');
 
 :root {
 	--nice: #4f7aa5;
@@ -18,6 +18,47 @@ body {
 	margin: 0;
 }
 
+/* FontAwesome icons */
+.fa-html5 {
+	color: rgb(234, 98, 40);
+}
+
+.fa-css3-alt {
+	color: rgb(3, 155, 230);
+}
+
+.fa-js {
+	color: #f0db4f;
+}
+
+.fa-php {
+	color: #8892BF;
+}
+
+.fa-react {
+	color: #61dafb;
+}
+
+.fa-node-js {
+	color: #689f63;
+}
+
+.fa-sass {
+	color: #cf649a;
+}
+
+.fa-linkedin {
+	color: #0073b0;
+}
+
+.fa-github-square {
+	color: #24292e;
+}
+
+.fa-wordpress {
+	color: #00769d;
+}
+
 .container {
 	position: relative;
 	display: flex;
@@ -29,7 +70,7 @@ body {
 	background-position: 0 0;
 	background-repeat: repeat;
 	background-attachment: fixed;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Noto Sans HK', sans-serif;
 	text-align: center;
 	color: var(--text);
 	width: 100%;
@@ -119,6 +160,16 @@ body {
 	font-size: 1.5rem;
 }
 
+.cardTitle img {
+	width: 1em;
+	overflow: visible;
+	font-size: 1.5rem;
+	padding: 3px;
+}
+
+.holdsIcons img {
+	padding: 3px;
+}
 .line {
 	height: 2px;
 	background-color: var(--nice);
@@ -145,7 +196,15 @@ body {
 	padding: 2.5%;
 	display: none;
 }
+/*
+.bot {
+	flex-flow: column wrap;
+}
 
+.row {
+	display: none;
+}
+*/
 .content h2 {
 	margin-top: 0;
 }
@@ -161,6 +220,7 @@ body {
 
 .content span {
 	font-size: 1rem;
+	padding-left: .2rem;
 }
 
 .content svg {
@@ -247,16 +307,11 @@ body {
 }
 
 /* Projects tab */
-.projectCard:first-of-type {
-	border-top: none;
-}
-
-
 .projectCard {
 	flex-flow: row wrap;
 	border-radius: .3rem;
 	padding: 15px;
-	background-image: linear-gradient(to right, #eef, #dde);
+	background-image: linear-gradient(to right, #f6fffc, #f2fbf8);
 	margin-top: 1rem;
 	box-shadow: 0px 2px 5px 1px #0000002e;
 	align-items: stretch !important;
@@ -284,7 +339,7 @@ body {
 .projects button {
 	margin: .5rem;
 	padding: .6rem;
-	background-color: #e8f3ff;
+	background-color: #c3f1fb;
 	color: var(--text);
 	border: none;
 	border-radius: .2rem;
@@ -292,7 +347,20 @@ body {
 	outline: none;
 }
 
+.content.contact .projectCard section {
+	margin-top: .75rem;
+}
+.content .projectCard .shrink {
+	display: block;
+}
+
 /* Media queries for smaller screens */
+@media only screen and (max-width: 1000px) { 
+	.container {
+		background-size: 150%;
+	}
+
+};
 @media only screen and (max-width: 625px) {
 	.container {
 		background-size: 225%;
@@ -324,7 +392,6 @@ body {
 	.topRight span {
 		font-size: 1rem;
 	}
-
 }
 
 @media only screen and (max-width: 550px) {
@@ -379,6 +446,14 @@ body {
 
 	.topRight span {
 		font-size: .9rem;
+	}
+
+	.holdsIcons img {
+		width: 2.2rem;
+	}
+	
+	.projects .holdsIcons span {
+		display: none;
 	}
 }
 
@@ -506,3 +581,4 @@ body {
 	.footer span {
 		font-size: .7rem;
 	}
+}
