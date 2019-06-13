@@ -173,7 +173,7 @@ body {
 .line {
 	height: 2px;
 	background-color: var(--nice);
-	margin: 5%;
+	margin: 2rem;
 }
 
 .screenshot {
