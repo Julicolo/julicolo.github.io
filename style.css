@@ -254,6 +254,10 @@ body {
 		display: none;
 	}
 
+	.about .projectCard .cardTitle div {
+		justify-content: space-between;
+	}
+	
 	.projects .holdsIcons span {
 		display: none;
 	}
