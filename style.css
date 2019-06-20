@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+HK&display=swap');
+@font-face {
+  font-family: Noto Sans HK;
+  src: url(fonts/NotoSans-Regular.ttf);
+}
 
 :root {
 	--nice: #4f7aa5;
@@ -24,7 +27,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	flex-flow: column nowrap;
-	background: url(media/background.svg);
+	background: url(media/svg/background.svg);
 	background-size: 75%;
 	background-position: 0 0;
 	background-repeat: repeat;
@@ -33,11 +36,6 @@ body {
 	text-align: center;
 	color: var(--text);
 	width: 100%;
-}
-
-.container h1 {
-	margin: 0;
-	font-size: 3rem;
 }
 
 .container h2 {
@@ -64,35 +62,37 @@ body {
 }
 
 .header {
-	width: 100%;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-evenly;
 	align-items: center;
 }
 
-.header a section h1 {
+.header a:first-child {
+	margin: .5rem;
+	width: 100%;
+}
+
+.header a h1 {
 	margin: 0;
 	font-size: 1.5rem;
 }
 
-.header a section p {
+.header a p {
 	font-size: 1rem;
 	margin: 0;
 }
 
-.line {
-	height: 2px;
-	background-color: var(--nice);
-}
 /* Main section of page */
 
 .main {
-	position: relative;
+	display: flex;
+	flex-flow: column wrap;
+	align-content: center;
 	margin: .5rem 1rem;
 }
 
-.main > div:not(:first-of-type) {
+.main > div {
 	margin-bottom: 3rem;
 }
 
@@ -101,6 +101,7 @@ body {
 	flex-flow: row wrap;
 	border-radius: .3rem;
 	padding: 15px;
+	width: 50rem;
 	background-image: linear-gradient(to right, #f6fffc, #f2fbf8);
 	margin-top: 1rem;
 	box-shadow: 0px 2px 5px 1px #0000002e;
@@ -132,7 +133,6 @@ body {
 .about .holdsIcons {
 	margin: .5rem;
 }
-
 
 .holdsIcons {
 	margin: 0 .5rem;
@@ -180,6 +180,10 @@ body {
 	flex-flow: column wrap;
 }
 
+.description p {
+	margin: 0;
+}
+
 .projects button {
 	margin: .5rem;
 	padding: .6rem;
@@ -195,63 +199,20 @@ body {
 	margin-bottom: 2%;
 }
 
-/* FontAwesome icons */
-.fa-html5 {
-	color: rgb(234, 98, 40);
-}
-
-.fa-css3-alt {
-	color: rgb(3, 155, 230);
-}
-
-.fa-js {
-	color: #f0db4f;
-}
-
-.fa-php {
-	color: #8892BF;
-}
-
-.fa-react {
-	color: #61dafb;
-}
-
-.fa-node-js {
-	color: #689f63;
-}
-
-.fa-sass {
-	color: #cf649a;
-}
-
-.fa-linkedin {
-	color: #0073b0;
-}
-
-.fa-github-square {
-	color: #24292e;
-}
-
-.fa-wordpress {
-	color: #00769d;
-}
-
-
 /* Media queries for smaller screens */
-@media only screen and (max-width: 1000px) { 
+@media only screen and (max-width: 850px) { 
 	.container {
-		background-size: 150%;
+		background-size: 99%;
 	}
 
+	.projectCard {
+		width: 100%;
+	}
 }
 
 @media only screen and (max-width: 625px) {
 	.container {
 		font-size: .9rem;
-	}
-
-	.header a section {
-		display: none;
 	}
 
 	.about .projectCard .cardTitle div {
@@ -260,6 +221,10 @@ body {
 	
 	.projects .holdsIcons span {
 		display: none;
+	}
+
+	.description p {
+		margin: 1rem;
 	}
 
 };

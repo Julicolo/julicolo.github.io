@@ -28,7 +28,6 @@
 	<link rel="shortcut icon" href="media/leaf.ico" type="image/x-icon">
 	<link rel="stylesheet" href="style.css">
 	<script defer src="script.js"></script>
-	<script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"></script>
 	<title>Portfolio Julio Schilders</title>
 </head>
 <body>
@@ -48,37 +47,39 @@
 			</a>
 		</header>
 		<main class="main">
-			<div class="line"></div>
 			<!-- About tab -->
-			<div class="about">
+			<div class="about anchor">
 				<div class="projectCard">
 					<div class="cardTitle shrink">
 						<section>
 							<h2>Hi there!</h2>
-							<p>	My name is Julio Schilders and I'm a first year web development student!<br>
-								I live in Breda and I'm studying in Eindhoven.<br>My hobbies are writing code, listening to music, watching series, grabbing a bite, gaming and meeting up with friends!
+							<p>
+								Welcome to my portfolio!
+								<br>
+								My name is Julio Schilders and I'm a first year web development student!<br>
+								I live in Breda and I'm studying in Eindhoven.<br>My hobbies are writing code, listening to music, watching series, grabbing a bite, playing games of any sort and meeting up with friends!
 							</p>
 						</section>		
 					</div>
 				</div>
 				<div class="projectCard">
 					<div class="cardTitle shrink">
-						<h3>Languages</h3>
+						<h3>Programming languages</h3>
 						<div class="languages">				
 							<div class="holdsIcons">
-								<i class="fab fa-html5"></i>
-								<span>HTML5</span>
+								<img class="svg" src="media/svg/html5.svg" alt="html5 icon">
+								<span>HTML</span>
 							</div>
 							<div class="holdsIcons">
-								<i class="fab fa-css3-alt"></i>
-								<span>CSS3</span>
+								<img class="svg" src="media/svg/css3.svg" alt="css3 icon">
+								<span>CSS</span>
 							</div>
 							<div class="holdsIcons">
-								<i class="fab fa-js"></i>
+								<img class="svg" src="media/svg/js.svg" alt="javascript icon">
 								<span>JavaScript</span>
 							</div>
 							<div class="holdsIcons">
-								<i class="fab fa-php"></i>
+								<img class="svg" src="media/svg/php.svg" alt="php icon">
 								<span>PHP</span>
 							</div>
 						</div>
@@ -89,19 +90,19 @@
 						<h3>Frameworks & Libraries</h3>
 						<div class="languages">
 							<div class="holdsIcons">
-								<i class="fab fa-react"></i>
+								<img class="svg" src="media/svg/react.svg" alt="react icon">
 								<span>React</span>
 							</div>
 							<div class="holdsIcons">
-								<i class="fab fa-node-js"></i>
+								<img class="svg" src="media/svg/node.svg" alt="node icon">
 								<span>Node</span>	
 							</div>
 							<div class="holdsIcons">
-								<img class="expressjs" src="media/express.svg">
+								<img class="svg" src="media/svg/express.svg" alt="express.js icon">
 								<span>Express</span>
 							</div>
 							<div class="holdsIcons">
-								<img src="media/jquery.svg" class="jquery">
+								<img class="svg" src="media/svg/jquery.svg" alt="jquery icon">
 								<span>jQuery</span>
 							</div>
 						</div>
@@ -112,45 +113,62 @@
 						<h3>Other</h3>
 						<div class="languages">
 							<div class="holdsIcons">
-								<i class="fab fa-sass"></i>
-								<span>SASS</span>	
-							</div>
-							<div class="holdsIcons">
-								<img src="media/git.svg"></svg>
+								<img class="svg" src="media/svg/git.svg" alt="git icon">
 								<span>Git</span>
 							</div>
 							<div class="holdsIcons">
-								<i class="fab fa-wordpress"></i>
+								<img class="svg" src="media/svg/sass.svg" alt="sass icon">
+								<span>SASS</span>	
+							</div>
+							<div class="holdsIcons">
+								<img class="svg" src="media/svg/sql.svg" alt="sql icon">
+								<span>SQL</span>
+							</div>
+							<div class="holdsIcons">
+								<img class="svg" src="media/svg/mysql.svg" alt="mysql icon">
+								<span>MySQL</span>
+							</div>
+							<div class="holdsIcons">
+								<img class="svg" src="media/svg/wordpress.svg" alt="wordpress icon">
 								<span>Wordpress</span>
+							</div>
+							<div class="holdsIcons">
+								<img class="svg" src="media/svg/photoshop.svg" alt="photoshop icon">
+								<span>PhotoShop</span>
+							</div>
+							<div class="holdsIcons">
+								<img class="svg" src="media/svg/seo.svg" alt="seo icon">
+								<span>SEO</span>
 							</div>
 						</div>		
 					</div>
 				</div>
 			</div>
 			<!-- Projects tab -->
-			<div class="projects">
+			<div class="projects anchor">
 				<h2>Projects</h2>
 				<div class="projectCard">
 					<div class="cardTitle">
 						<h3>Todo app</h3>
 						<div class="languages">
 							<div class="holdsIcons">
-								<i class="fab fa-react"></i>
+								<img class="svg" src="media/svg/react.svg" alt="react icon">
 								<span>React</span>
 							</div>	
 							<div class="holdsIcons">
-								<i class="fab fa-css3-alt"></i>
+								<img class="svg" src="media/svg/css3.svg" alt="css3 icon">
 								<span>CSS</span>
 							</div>
 						</div>
 					</div>
 					<div class="screenshot">
-						<img src="media/todo.png" alt="filler" width="450" height="300">
+						<img src="media/todo.jpg" alt="filler" width="450" height="300">
 					</div>
 					<div class="description">
 						<p>
-							Users are able to add and remove todo's, they are also able to clear the list as a whole.<br>
-							There is a message displayed depending on how many todo's they have done.
+							A simple todo app.
+							Users are able to add and remove todos, they are also able to drag and drop to re-order the list.
+							This leaves a small indicator so they know where their dragged element will be dropped.
 						</p>
 						<div class="holdsButtons">
 							<a href="https://julicolo.github.io/react-todo-list" target="_blank" rel="noopener noreferrer">
@@ -168,19 +186,26 @@
 						<div class="languages">
 							<div class="languages">
 								<div class="holdsIcons">
-									<i class="fab fa-wordpress"></i>
+									<img class="svg" src="media/svg/wordpress.svg" alt="wordpress icon">
 									<span>Wordpress</span>
+								</div>
+								<div class="holdsIcons">
+									<img class="svg" src="media/svg/css3.svg" alt="css3 icon">
+									<span>CSS</span>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="screenshot">
-						<img src="media/kukomo.png" alt="filler" width="450" height="300">
+						<img src="media/kukomo.jpg" alt="filler" width="450" height="300">
 					</div>
 					<div class="description">
 						<p>
-							Website made for a fictional client, that specialises in selling window frames.<br>
-							This website is made with Wordpress as a CMS.
+							Third school project.
+							<br>
+							We had been given the assignment to make a website for a fictional client, that 	specialises in selling plastic window frames.
+							<br>
+							The website has been made with Wordpress as a CMS for the backend.
 						</p>
 						<div class="holdsButtons">
 							<a href="http://cursist38.reacollege.eu/projects/kukomo/" target="_blank" rel="noopener noreferrer">
@@ -194,25 +219,27 @@
 						<h3>Embed</h3>
 						<div class="languages">
 							<div class="holdsIcons">
-								<i class="fab fa-html5"></i>
+								<img class="svg" src="media/svg/html5.svg" alt="html5 icon">
 								<span>HTML</span>
 							</div>
 							<div class="holdsIcons">
-								<i class="fab fa-css3-alt"></i>
+								<img class="svg" src="media/svg/css3.svg" alt="css3 icon">
 								<span>CSS</span>								
 							</div>
 							<div class="holdsIcons">
-								<i class="fab fa-js"></i>
+								<img class="svg" src="media/svg/js.svg" alt="javascript icon">
 								<span>JavaScript</span>
 							</div>
 						</div>
 					</div>
 					<div class="screenshot">
-						<img src="https://julicolo.github.io/media/embed.png" alt="filler" width="450" height="300">
+						<img src="media/embed.jpg" alt="filler" width="450" height="300">
 					</div>
 					<div class="description">
 						<p>
-							Website made for a fictional client, to show bedding and furniture for the bedroom.
+							Second school project.
+							<br>
+							For this project we had to translate a given Photoshop design into a fully functional website for a fictional client, that specialises in selling bedding and furniture for the bedroom.
 						</p>
 						<div class="holdsButtons">
 							<a href="https://julicolo.github.io/Embed" target="_blank" rel="noopener noreferrer">
@@ -229,63 +256,71 @@
 						<h3>CSS assignment</h3>
 						<div class="languages">
 							<div class="holdsIcons">
-								<i class="fab fa-html5"></i>
+								<img class="svg" src="media/svg/html5.svg" alt="html5 icon">
 								<span>HTML</span>
 							</div>
 							<div class="holdsIcons">
-								<i class="fab fa-css3-alt"></i>
+								<img class="svg" src="media/svg/css3.svg" alt="css3 icon">
 								<span>CSS</span>			
 							</div>
 						</div>
 					</div>
 					<div class="screenshot">
-						<img src="media/firstsite.png" alt="filler" width="450" height="300">
+						<img src="media/firstsite.jpg" alt="filler" width="450" height="300">
 					</div>
 					<div class="description">
-						<p>My first website, this website has not been touched ever since so there are some minor bugs!</p>
-						<div class="holdsButtons">
-							<a href="https://julicolo.github.io/first-website" target="_blank" rel="noopener noreferrer">
-								<button aria-label="go to my first website" value="go to project">Go to project</button>
-							</a>
-							<a href="https://github.com/Julicolo/first-website" target="_blank" rel="noopener noreferrer">
-								<button aria-label="view on github">View code on GitHub</button>
-							</a>
+						<p>
+							My first website, this website was our first school project
+							<br>
+							Here we had been given the chance to display our new found skills.
+							<br>
+							A few examples of these are: gradient in the footer, dropdown menu, etc.
+							<div class="holdsButtons">
+								<a href="https://julicolo.github.io/first-website" target="_blank" rel="noopener noreferrer">
+									<button aria-label="go to my first website" value="go to project">Go to project</button>
+								</a>
+								<a href="https://github.com/Julicolo/first-website" target="_blank" rel="noopener noreferrer">
+									<button aria-label="view on github">View code on GitHub</button>
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<!-- Contact tab --> 
-			<div class="contact">
-				<h2>Get in touch with me!</h2>
-				<div class="projectCard">
-					<div class="cardTitle shrink">
-						<div class="languages">
-							<div class="holdsIcons">
-								<a href="https://github.com/Julicolo" target="_blank" rel="noopener noreferrer">
-									<i class="fab fa-github-square"></i>
-									<span>GitHub</span>
-								</a>
-							</div>
-							<div class="holdsIcons">
-								<a href="https://linkedin.com/in/julioschilders" target="_blank" rel="noopener noreferrer">
-									<i class="fab fa-linkedin"></i>
-									<span>LinkedIn</span>
-								</a>
-							</div>
-						</div>		
-						<section>
-							<p>
-								Got a question for me? Or perhaps you've got some feedback for me?<br>
-								Don't hesistate to contact me on any of the above mentioned platforms! I will try to get back to you asoon as possible!
-							</p>
-						</section>
+				<!-- Contact tab --> 
+				<div class="contact anchor">
+					<h2>Get in touch with me!</h2>
+					<div class="projectCard">
+						<div class="cardTitle shrink">
+							<div class="languages">
+								<div class="holdsIcons">
+									<a href="https://github.com/Julicolo" target="_blank" rel="noopener noreferrer">
+										<img class="svg" src="media/svg/github.svg" alt="github icon">
+										<span>GitHub</span>
+									</a>
+								</div>
+								<div class="holdsIcons">
+									<a href="https://linkedin.com/in/julioschilders" target="_blank" rel="noopener noreferrer">
+										<img class="svg" src="media/svg/linkedin.svg" alt="linkedin icon">
+										<span>LinkedIn</span>
+									</a>
+								</div>
+							</div>		
+							<section>
+								<p>
+									Thanks for looking at my portfolio!
+									<br>
+									Do you have a question for me, or perhaps some feedback?
+									<br>
+									Feel free to contact me, to let me know!
+								</p>
+							</section>
+						</div>
 					</div>
 				</div>
-			</div>
-		</main>
-		<footer class="footer">
-			<span>&copy; Julio Schilders</span>
-		</footer>
-	</div>
-</body>
-</html>
+			</main>
+			<footer class="footer">
+				<span>&copy; Julio Schilders</span>
+			</footer>
+		</div>
+	</body>
+	</html>
