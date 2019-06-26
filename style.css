@@ -27,25 +27,22 @@ body {
 	align-items: center;
 	justify-content: center;
 	flex-flow: column nowrap;
-	background: url(media/svg/background.svg);
-	background-size: 75%;
-	background-position: 0 0;
-	background-repeat: repeat;
-	background-attachment: fixed;
 	font-family: 'Noto Sans HK', sans-serif;
 	text-align: center;
 	color: var(--text);
 	width: 100%;
 }
 
-.container h2 {
+.container h2, h3 {
 	margin-top: 0;
 	color: var(--nice);
+	text-align: left;
 }
 
-.container h3 {
-	text-align: left;
-	padding-left: 15px;
+.container h2 {
+	border-bottom: 4px dotted lightgrey;
+	padding-bottom: 1rem;
+	margin-bottom: 4rem;
 }
 
 .container a {
@@ -64,13 +61,20 @@ body {
 .header {
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	align-items: center;
+	width: 100%;
+	margin-bottom: 3rem;
+	position: sticky;
+	top: 0;
+	background-color: white;
+	box-shadow: 0px 4px 5px -4px #0000002e;
+	padding: 0 calc((100% - 50rem) / 2);
 }
 
 .header a:first-child {
-	margin: .5rem;
-	width: 100%;
+	margin-left: 0;
+    margin-right: 8rem;
 }
 
 .header a h1 {
@@ -93,19 +97,21 @@ body {
 }
 
 .main > div {
-	margin-bottom: 3rem;
+	margin-bottom: 4rem;
 }
 
 .projectCard {
 	display: flex;
 	flex-flow: row wrap;
 	border-radius: .3rem;
-	padding: 15px;
 	width: 50rem;
-	background-image: linear-gradient(to right, #f6fffc, #f2fbf8);
-	margin-top: 1rem;
-	box-shadow: 0px 2px 5px 1px #0000002e;
+	margin-bottom: 4rem;
 	align-items: stretch;
+	text-align: left;
+}
+
+.projects .projectCard {
+	margin-bottom: 10rem;
 }
 
 .projectCard .shrink {
@@ -114,7 +120,7 @@ body {
 
 .projectCard .cardTitle div {
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 }
 
@@ -125,13 +131,18 @@ body {
 }
 
 .languages {
-	margin: .5rem;
 	flex-flow: row wrap;
 	justify-content: flex-start;
+	margin-left: -.5rem;
 }
 
 .about .holdsIcons {
 	margin: .5rem;
+}
+
+.about section {
+	padding-bottom: 2rem;
+	border-bottom: 4px dotted lightgrey;
 }
 
 .holdsIcons {
@@ -157,7 +168,7 @@ body {
 
 .screenshot {
 	flex: 1 0 30%;
-	padding: 0 15px 15px;
+	padding-right: 15px;
 }
 
 .screenshot img {

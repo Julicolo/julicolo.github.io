@@ -27,11 +27,10 @@
 	<!-- Stylesheet(s) & Script(s) -->
 	<link rel="shortcut icon" href="media/leaf.ico" type="image/x-icon">
 	<link rel="stylesheet" href="style.css">
-	<script defer src="script.js"></script>
 	<title>Portfolio Julio Schilders</title>
 </head>
 <body>
-	<div class="container" style="background-position:0 0;">
+	<div class="container">
 		<header class="header">
 			<a href="#" rel="noopener noreferrer">
 				<section>
@@ -39,20 +38,20 @@
 					<p>Web Development Student</p>
 				</section>
 			</a>
-			<a href="#" rel="noopener noreferrer">Projects</a>
-			<a href="#" rel="noopener noreferrer">About</a>
-			<a href="#" rel="noopener noreferrer">Contact</a>
+			<a href="#about" rel="noopener noreferrer">About</a>
+			<a href="#projects" rel="noopener noreferrer">Projects</a>
+			<a href="#contact" rel="noopener noreferrer">Contact</a>
 			<a href="media/resume.pdf" target="_blank" rel="noopener noreferrer">
 				<span>Resume</span>
 			</a>
 		</header>
 		<main class="main">
 			<!-- About tab -->
-			<div class="about anchor">
+			<div id="about" class="about">
 				<div class="projectCard">
 					<div class="cardTitle shrink">
 						<section>
-							<h2>Hi there!</h2>
+							<h3>Hi there!</h3>
 							<p>
 								Welcome to my portfolio!
 								<br>
@@ -145,7 +144,7 @@
 				</div>
 			</div>
 			<!-- Projects tab -->
-			<div class="projects anchor">
+			<div id="projects" class="projects">
 				<h2>Projects</h2>
 				<div class="projectCard">
 					<div class="cardTitle">
@@ -153,11 +152,9 @@
 						<div class="languages">
 							<div class="holdsIcons">
 								<img class="svg" src="media/svg/react.svg" alt="react icon">
-								<span>React</span>
 							</div>	
 							<div class="holdsIcons">
 								<img class="svg" src="media/svg/css3.svg" alt="css3 icon">
-								<span>CSS</span>
 							</div>
 						</div>
 					</div>
@@ -187,11 +184,9 @@
 							<div class="languages">
 								<div class="holdsIcons">
 									<img class="svg" src="media/svg/wordpress.svg" alt="wordpress icon">
-									<span>Wordpress</span>
 								</div>
 								<div class="holdsIcons">
 									<img class="svg" src="media/svg/css3.svg" alt="css3 icon">
-									<span>CSS</span>
 								</div>
 							</div>
 						</div>
@@ -220,15 +215,12 @@
 						<div class="languages">
 							<div class="holdsIcons">
 								<img class="svg" src="media/svg/html5.svg" alt="html5 icon">
-								<span>HTML</span>
 							</div>
 							<div class="holdsIcons">
 								<img class="svg" src="media/svg/css3.svg" alt="css3 icon">
-								<span>CSS</span>								
 							</div>
 							<div class="holdsIcons">
 								<img class="svg" src="media/svg/js.svg" alt="javascript icon">
-								<span>JavaScript</span>
 							</div>
 						</div>
 					</div>
@@ -257,11 +249,9 @@
 						<div class="languages">
 							<div class="holdsIcons">
 								<img class="svg" src="media/svg/html5.svg" alt="html5 icon">
-								<span>HTML</span>
 							</div>
 							<div class="holdsIcons">
 								<img class="svg" src="media/svg/css3.svg" alt="css3 icon">
-								<span>CSS</span>			
 							</div>
 						</div>
 					</div>
@@ -287,7 +277,7 @@
 					</div>
 				</div>
 				<!-- Contact tab --> 
-				<div class="contact anchor">
+				<div id="contact" class="contact">
 					<h2>Get in touch with me!</h2>
 					<div class="projectCard">
 						<div class="cardTitle shrink">
