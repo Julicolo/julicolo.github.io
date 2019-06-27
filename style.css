@@ -217,7 +217,25 @@ body {
 }
 
 /* Media queries for smaller screens */
-@media only screen and (max-width: 625px) {
+@media only screen and (max-width: 850px) {
+	.header {
+		margin-left: 1rem;
+	}
+	
+	.header a:first-child {
+		margin-right: 7rem;
+	}
+	
+	.header a:last-child {
+		margin-right: 1rem;
+	}
+
+	.projectCard {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 650px) {
 	.header {
 		justify-content: space-evenly;
 		width: 100%;
@@ -234,10 +252,6 @@ body {
 
 	.header a p {
 		font-size: .7rem;
-	}
-
-	.projectCard {
-		width: 100%;
 	}
 
 	.projects .projectCard {
