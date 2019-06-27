@@ -40,10 +40,14 @@ body {
 	text-align: left;
 }
 
-.container h2 {
+.container h2:not(.noborder) {
 	border-bottom: 4px dotted lightgrey;
 	padding-bottom: 1rem;
 	margin-bottom: 4rem;
+}
+
+.container h3 {
+	color: var(--text);
 }
 
 .container a {
@@ -199,12 +203,13 @@ body {
 .projects button {
 	margin: .5rem;
 	padding: .6rem;
-	background-color: #c3f1fb;
-	color: var(--text);
+	background-color: var(--nice);
+	color: white;
 	border: none;
 	border-radius: .2rem;
 	font-size: .8rem;
 	outline: none;
+	box-shadow: 0px 5px 4px -4px #0000002e;
 }
 
 .footer {
@@ -212,19 +217,31 @@ body {
 }
 
 /* Media queries for smaller screens */
-@media only screen and (max-width: 850px) { 
-	.container {
-		background-size: 99%;
+@media only screen and (max-width: 625px) {
+	.header {
+		justify-content: space-evenly;
+		width: 100%;
+	}
+
+	.header a:first-child {
+		margin-right: 0;
+		width: 100%;
+	}
+
+	.header a h1 {
+		font-size: 1rem;
+	}
+
+	.header a p {
+		font-size: .7rem;
 	}
 
 	.projectCard {
 		width: 100%;
 	}
-}
 
-@media only screen and (max-width: 625px) {
-	.container {
-		font-size: .9rem;
+	.projects .projectCard {
+    	margin-bottom: 5rem;
 	}
 
 	.about .projectCard .cardTitle div {
