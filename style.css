@@ -219,10 +219,11 @@ body {
 /* Media queries for smaller screens */
 @media only screen and (max-width: 850px) {
 	.header {
-		margin-left: 1rem;
+		margin: 0;
 	}
 	
 	.header a:first-child {
+		margin-left: 1rem;
 		margin-right: 7rem;
 	}
 	
@@ -238,11 +239,12 @@ body {
 @media only screen and (max-width: 650px) {
 	.header {
 		justify-content: space-evenly;
+		margin-left: 0;
 		width: 100%;
 	}
 
 	.header a:first-child {
-		margin-right: 0;
+		display: none;
 		width: 100%;
 	}
 
