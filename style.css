@@ -1,10 +1,13 @@
 @font-face {
-  font-family: Noto Sans HK;
-  src: url(fonts/NotoSans-Regular.ttf);
+  font-family: Karla;
+  font-display: auto;
+  src: local('Karla'), url(media/Karla.ttf);
 }
 
 :root {
 	--nice: rgb(110, 163, 242);
+	--lightblue: #4c8ff3;
+	--darkblue: #146ef5;
 	--text: #45515d;
 }
 
@@ -27,7 +30,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	flex-flow: column nowrap;
-	font-family: 'Noto Sans HK', sans-serif;
+	font-family: 'Karla', sans-serif;
 	text-align: center;
 	color: var(--text);
 	width: 100%;
@@ -36,7 +39,7 @@ body {
 
 .container h2, h3 {
 	margin-top: 0;
-	color: var(--nice);
+	color: var(--lightblue);
 	text-align: left;
 }
 
@@ -76,9 +79,17 @@ body {
 	padding: .5rem calc((100% - 50rem) / 2);
 }
 
+.header a {
+  color: var(--lightblue);
+}
+
+.header span {
+  color: var(--darkblue);
+}
+
 .header a, .header span {
-  color: var(--nice);
   text-decoration: none;
+  font-size: 1.2rem;
 }
 
 .header a:first-child {
@@ -222,7 +233,7 @@ body {
 .projectCard .button {
 	margin: .5rem;
 	padding: .6rem;
-	background-color: var(--nice);
+	background-color: var(--darkblue);
   text-decoration: none;
 	color: white;
 	border: none;
