@@ -41,9 +41,9 @@ body {
 }
 
 .container h2:not(.noborder) {
-	border-bottom: 4px dotted lightgrey;
+	border-bottom: .25rem dotted lightgrey;
 	padding-bottom: 1rem;
-	margin-bottom: 4rem;
+	margin-bottom: 3rem;
 }
 
 .container h3 {
@@ -200,7 +200,7 @@ body {
 	margin: 0;
 }
 
-.projects button {
+.projects a {
 	margin: .5rem;
 	padding: .6rem;
 	background-color: var(--nice);
