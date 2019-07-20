@@ -57,6 +57,7 @@ body {
 
 .container p, .container span {
   color: var(--text);
+  margin: 0;
 }
 
 .container span {
@@ -78,7 +79,7 @@ body {
 	top: 0;
 	background-color: white;
 	box-shadow: 0px 4px 5px -4px #0000002e;
-	padding: .5rem calc((100% - 50rem) / 2);
+	padding: .5rem calc((100% - 55rem) / 2);
 }
 
 .header a, .header span {
@@ -120,7 +121,7 @@ body {
 	display: flex;
 	flex-flow: row wrap;
 	border-radius: .3rem;
-	width: 50rem;
+	width: 55rem;
 	margin-bottom: 4rem;
 	align-items: stretch;
 	text-align: left;
@@ -286,6 +287,10 @@ body {
 	.header a:first-child {
 		display: none;
 		width: 100%;
+	}
+
+	.header a:last-child {
+		margin-right: 0;
 	}
 
 	.header a h1 {
