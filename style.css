@@ -37,6 +37,10 @@ body {
 	padding-top: 90px;
 }
 
+.container h2.noborder {
+	font-size: 1.8rem;
+}
+
 .container h2, h3 {
 	margin-top: 0;
 	color: var(--lightblue);
@@ -51,13 +55,15 @@ body {
 
 .container h3 {
 	color: var(--text);
-	font-size: 1.35rem;
+	font-size: 1.7rem;
 	margin: 0;
 }
 
 .container p, .container span {
   color: var(--text);
   margin: 0;
+  font-size: 1.2rem;
+  padding: .25rem 0;
 }
 
 .container span {
@@ -66,6 +72,17 @@ body {
 
 .container svg {
 	font-size: 1.5rem;
+}
+
+.cardTitle section p {
+	font-size: 1.2rem;
+}
+
+.description span {
+	color: var(--text);
+	padding: .75rem 0 0;
+	font-size: 1rem;
+	font-style: italic;
 }
 
 .header {
@@ -79,7 +96,7 @@ body {
 	top: 0;
 	background-color: white;
 	box-shadow: 0px 4px 5px -4px #0000002e;
-	padding: .5rem calc((100% - 55rem) / 2);
+	padding: .5rem calc((100% - 60rem) / 2);
 }
 
 .header a, .header span {
@@ -121,7 +138,8 @@ body {
 	display: flex;
 	flex-flow: row wrap;
 	border-radius: .3rem;
-	width: 55rem;
+	max-width: 60rem;
+	width: 100%;
 	margin-bottom: 4rem;
 	align-items: stretch;
 	text-align: left;
@@ -147,21 +165,24 @@ body {
 	align-items: center;
 }
 
+.projectCard .cardTitle.shrink h3 {
+	margin: 1rem 0;
+}
+
 .cardTitle {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 1.5rem;
+	margin-bottom: 1rem;
 }
 
 .languages {
 	flex-flow: row wrap;
 	justify-content: flex-start;
-	margin-left: -.5rem;
 }
 
-.about .holdsIcons {
-	margin: .5rem;
+.cardTitle.shrink > div .holdsIcons {
+	margin: 1rem 2rem 1rem 0;
 }
 
 .about section {
@@ -187,15 +208,23 @@ body {
 }
 
 .holdsIcons img {
-	width: 1.7rem;
-}
-
-.holdsIcons img.js {
-	width: 2rem;
+	width: 2.1rem;
 }
 
 .holdsIcons img.ts {
-	width: 1.5rem;
+	width: 1.8rem;
+}
+
+.holdsIcons img.js, .holdsIcons img.wp {
+	width: 2.4rem;
+}
+
+.holdsIcons img.gmail, .holdsIcons img.npm {
+	width: 2.6rem;
+}
+
+.holdsIcons img.mysql {
+	width: 3.5rem;
 }
 
 .screenshot {
@@ -215,7 +244,7 @@ body {
 .holdsButtons {
 	flex-flow: row wrap;
 	justify-content: flex-end;
-	margin: auto 0 0 auto;
+	margin: 1rem 0 0 auto;
 }
 
 .holdsButtons a {
@@ -234,6 +263,7 @@ body {
 	margin: 0;
   color: var(--text);
   text-decoration: none;
+	font-size: 1.1rem;
 }
 
 .projectCard .button {
@@ -249,9 +279,14 @@ body {
 	box-shadow: 0px 5px 4px -4px #0000002e;
 }
 
-#contact.contact h2 {
+#contact h2 {
   margin-bottom: 1rem;
 }
+
+#contact h3 {
+	margin: 2rem 0 1rem;
+}
+
 
 .footer {
 	margin-bottom: 2%;
@@ -278,6 +313,10 @@ body {
 }
 
 @media only screen and (max-width: 650px) {
+	.container {
+		padding-top: 2.5rem;
+	}
+
 	.header {
 		justify-content: space-evenly;
 		margin-left: 0;
@@ -304,19 +343,12 @@ body {
 	.cardTitle {
 		padding: 1rem;
 	}
-	.projects .projectCard {
-    	margin-bottom: 5rem;
-	}
 
 	.about .projectCard .cardTitle div {
 		justify-content: space-between;
 	}
 
-  .screenshot, .description p {
+  .screenshot, .description p, .description span {
     padding-left: 1rem;
-  }
-
-  .description p {
-    padding: 1rem;
   }
 };

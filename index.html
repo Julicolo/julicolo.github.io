@@ -6,23 +6,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="canonical" href="https://julicolo.github.io">
 	<meta name="author" content="Julio Schilders">
-	<meta name="description" content="Portfolio & resume of a junior web developer in training, 
-	located in Breda and studying in Eindhoven!	Interested in learning React & Node">
+	<meta name="description" content="Portfolio & resume of a web developer in training, 
+	I live in Breda and studying in Eindhoven! I enjoy learning and experimenting with new technologies">
 	<meta name="google-site-verification" content="fRzCbxS79kqRweZqek4u6yamnn1dyraAeauAu60XCC0" />
 	<!-- Twitter -->
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:title" content="Portfolio Website Julio Schilders">
 	<meta name="twitter:description" 
 	property="og:description"
-	content="Portfolio & resume of a junior web developer in training, 
-	located in Breda and studying in Eindhoven!	Interested in learning React.js & Node.js">
+	content="Portfolio & resume of a web developer in training, 
+	I live in Breda and studying in Eindhoven! I enjoy learning and experimenting with new technologies">
 	<!-- General Social -->
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://julicolo.github.io">
 	<meta property="og:title" content="Portfolio Website Julio Schilders">
 	<meta property="og:image" content="media/leaf.ico">
-	<meta property="og:description" content="Portfolio & resume of a junior web developer in training, 
-	located in Breda and studying in Eindhoven!	I enjoy learning and experimenting with new web technologies :)">
+	<meta property="og:description" content="Portfolio & resume of a web developer in training, 
+	I live in Breda and studying in Eindhoven! I enjoy learning and experimenting with new technologies">
 	<meta property="og:image" content="media/leaf.ico" />
 	<!-- Stylesheet & Script -->
 	<link rel="shortcut icon" href="media/leaf.ico" type="image/x-icon">
@@ -30,7 +30,7 @@
 	<title>Portfolio Julio Schilders</title>
 </head>
 <body>
-	<div class="container">
+	<div class="container" id="top">
 		<header class="header">
 			<a href="#" rel="noopener noreferrer">
 				<section>
@@ -38,7 +38,7 @@
 					<p>Web Development Student</p>
 				</section>
 			</a>
-			<a href="#about" rel="noopener noreferrer">About</a>
+			<a href="#top" rel="noopener noreferrer">About</a>
 			<a href="#projects" rel="noopener noreferrer">Projects</a>
 			<a href="#contact" rel="noopener noreferrer">Contact</a>
 			<a href="media/resume.pdf" target="_blank" rel="noopener noreferrer">
@@ -47,7 +47,7 @@
 		</header>
 		<main class="main">
 			<!-- About tab -->
-			<div id="about" class="about">
+			<div class="about">
 				<div class="projectCard">
 					<div class="cardTitle">
 						<section>
@@ -103,11 +103,7 @@
 								<span>React</span>
 							</div>
 							<div class="holdsIcons">
-								<img class="svg" src="media/svg/node.svg" alt="node icon">
-								<span>Node</span>	
-							</div>
-							<div class="holdsIcons">
-								<img class="svg" src="media/svg/express.svg" alt="express.js icon">
+								<img class="svg" src="media/svg/express.png" alt="express.js icon">
 								<span>Express</span>
 							</div>
 							<div class="holdsIcons">
@@ -119,8 +115,12 @@
 				</div>
 				<div class="projectCard">
 					<div class="cardTitle shrink">
-						<h3>Other</h3>
+						<h3>Tools & Other</h3>
 						<div class="languages">
+							<div class="holdsIcons">
+								<img class="svg" src="media/svg/node.svg" alt="node icon">
+								<span>Node</span>	
+							</div>
 							<div class="holdsIcons">
 								<img class="svg" src="media/svg/git.svg" alt="git icon">
 								<span>Git</span>
@@ -130,28 +130,28 @@
 								<span>SASS</span>	
 							</div>
 							<div class="holdsIcons">
-								<img class="svg" src="media/svg/npm.svg" alt="npm icon">
-								<span>NPM</span>
+								<img class="svg ts" src="media/svg/typescript.svg" alt="typescript icon">
+								<span>TypeScript</span>
 							</div>
 							<div class="holdsIcons">
 								<span>💅</span>
 								<span>Styled Components</span>
 							</div>
 							<div class="holdsIcons">
+								<img class="svg npm" src="media/svg/npm.svg" alt="npm icon">
+								<span>NPM</span>
+							</div>
+							<div class="holdsIcons">
+								<img class="svg mysql" src="media/svg/mysql.svg" alt="mysql icon">
+								<span>MySQL</span>
+							</div>
+							<div class="holdsIcons">
 								<img class="svg" src="media/svg/seo.svg" alt="seo icon">
 								<span>SEO</span>
 							</div>
 							<div class="holdsIcons">
-								<img class="svg" src="media/svg/mysql.svg" alt="mysql icon">
-								<span>MySQL</span>
-							</div>
-							<div class="holdsIcons">
-								<img class="svg" src="media/svg/wordpress.svg" alt="wordpress icon">
+								<img class="svg wp" src="media/svg/wordpress.svg" alt="wordpress icon">
 								<span>WordPress</span>
-							</div>
-							<div class="holdsIcons">
-								<img class="svg ts" src="media/svg/typescript.svg" alt="typescript icon">
-								<span>TypeScript</span>
 							</div>
 							<div class="holdsIcons">
 								<img class="svg" src="media/svg/photoshop.svg" alt="photoshop icon">
@@ -161,11 +161,12 @@
 					</div>
 				</div>
 			</div>
+			<div id="projects"></div>
 			<!-- Projects tab -->
-			<div id="projects" class="projects">
+			<div class="projects">
 				<h2>Projects</h2>
 				<div class="projectCard">
-					<a class="clickable" href="https://julicolo.github.io/shopia" target="_blank" rel="noopener noreferrer">
+					<a class="clickable" href="https://github.com/Julicolo/JanitorJoe" target="_blank" rel="noopener noreferrer">
 						<div class="screenshot">
 							<img src="media/svg/discord.svg" alt="shopia discord">
 						</div>
@@ -182,16 +183,22 @@
 								</div>
 							</div>
 							<p>
-							Janitor Joe is a Discord that has a couple of fun commands</p>
-							<p>
-								This was originally written in TypeScript and then rewritten in JavaScript because it was quite difficult to work TypeScript, the Discord.js module and the Discord api all at once.
+								Janitor Joe is a Discord bot that can be added to your Discord server(s).
 							</p>
 							<p>
-								This would also open up the possibility of other people being able to contribute to the bot easier if they would want to.
+								This was originally written in TypeScript and then rewritten in plain JavaScript.
 							</p>
 							<p>
-								Expect more features to be released over time!
+								The bot has generic admin commands to bulk delete messages, kick users, etc.
 							</p>
+							<p>
+								The bot also has a set of fun commands, it can play music, compare Leaugue of Legends ranked stats, etc.
+							</p>
+							<br>
+							<p>
+								For a full list of commands, take a look at the GitHub repo!
+							</p>
+							<span>Discord is a voice and video chatting service</span>
 						</div>
 					</a>
 					<div class="holdsButtons">
@@ -200,10 +207,10 @@
 						</a>
 					</div>
 				</div>
-				<!-- <div class="projectCard">
+				<div class="projectCard">
 					<a class="clickable" href="https://julicolo.github.io/shopia" target="_blank" rel="noopener noreferrer">
 						<div class="screenshot">
-							<img src="media/shopia.png" alt="shopia project" width="450" height="300">
+							<img src="media/projects/shopia.png" alt="shopia project" width="450" height="300">
 						</div>
 						<div class="description">
 							<div class="cardTitle">
@@ -217,10 +224,9 @@
 									</div>
 								</div>
 							</div>
+							<p>Shopia is a fashion webshop</p>
 							<p>
-								A fashion webshop.<br>
-								This website features a caroussel on the home page, a global setting to change currency format and a fully functional shopping cart.<br><br>
-								Shopia is still a WIP so if there are still some parts missing, feel free to come back later to watch it evolve :)
+								Shopia is still under construction! If pages aren't properly redirecting or some parts are still missing, please come back later :)
 							</p>
 						</div>
 					</a>
@@ -232,11 +238,11 @@
 							Go to project
 						</a>
 					</div>
-				</div> -->
+				</div>
 				<div class="projectCard">
 					<a class="clickable" href="https://julicolo.github.io/react-pokedex" target="_blank" rel="noopener noreferrer">
 						<div class="screenshot">
-							<img src="media/reactpokedex.png" alt="pokedex project" width="450" height="300">
+							<img src="media/projects/reactpokedex.png" alt="pokedex project" width="450" height="300">
 						</div>
 						<div class="description">
 							<div class="cardTitle">
@@ -257,17 +263,15 @@
 								In development mode it caches all api requests to reduce stress on the PokeApi.
 							</p>
 							<p>
-								It loads more Pokemon as you scroll down the list to reduce amount of Api calls made.
+								It loads more Pokemon as you scroll down the list to reduce amount of Api calls made overall.
 							</p>
-							<br>
 							<br>
 							<p>
 								When clicked on a Pokemon it will display some information regarding the Pokemon on the right side.
 							</p>
 							<p>
-								Features a toggle to make the Pokemon sprites appear as 'shiny'.
+								Features a toggle to change the sprites to their shiny variant.
 							</p>
-							<p>Search function is still to be implemented.</p>
 						</div>
 					</a>
 					<div class="holdsButtons">
@@ -282,7 +286,7 @@
 				<div class="projectCard">
 					<a class="clickable" href="https://julicolo.github.io/react-todo-list" target="_blank" rel="noopener noreferrer">
 						<div class="screenshot">
-							<img src="media/todo.jpg" alt="todo app project" width="450" height="300">
+							<img src="media/projects/todo.png" alt="todo app project" width="450" height="300">
 						</div>
 						<div class="description">
 							<div class="cardTitle">
@@ -319,7 +323,7 @@
 				<div class="projectCard">
 					<a class="clickable" href="http://cursist38.reacollege.eu/projects/kukomo/" target="_blank" rel="noopener noreferrer">
 						<div class="screenshot">
-							<img src="media/kukomo.jpg" alt="KuKoMo project" width="450" height="300">
+							<img src="media/projects/kukomo.jpg" alt="KuKoMo project" width="450" height="300">
 						</div>
 						<div class="description">
 							<div class="cardTitle">
@@ -327,7 +331,7 @@
 								<div class="languages">
 									<div class="languages">
 										<div class="holdsIcons">
-											<img class="svg" src="media/svg/wordpress.svg" alt="wordpress icon">
+											<img class="svg wp" src="media/svg/wordpress.svg" alt="wordpress icon">
 										</div>
 										<div class="holdsIcons">
 											<img class="svg" src="media/svg/css3.svg" alt="css3 icon">
@@ -355,7 +359,7 @@
 				<div class="projectCard">
 					<a class="clickable" href="https://julicolo.github.io/Embed" target="_blank" rel="noopener noreferrer">
 						<div class="screenshot">
-							<img src="media/embed.jpg" alt="Embed project" width="450" height="300">
+							<img src="media/projects/embed.jpg" alt="Embed project" width="450" height="300">
 						</div>
 						<div class="description">
 							<div class="cardTitle">
@@ -376,7 +380,7 @@
 								For this project I had to translate a Photoshop design into a fully functional frontend for a fictional client, that specialises in selling bedding and furniture for the bedroom.
 							</p>
 							<p>
-								I also implented all the SEO meta tags for the products, etc. in JSON-LD format.
+								I also had to implented all the required SEO meta tags for the products, etc. in JSON-LD format.
 							</p>
 						</div>
 					</a>
@@ -392,7 +396,7 @@
 				<div class="projectCard">
 					<a class="clickable" href="https://julicolo.github.io/first-website" target="_blank" rel="noopener noreferrer">
 						<div class="screenshot">
-							<img src="media/firstsite.png" alt="filler" width="450" height="300">
+							<img src="media/projects/firstsite.png" alt="filler" width="450" height="300">
 						</div>
 						<div class="description">
 							<div class="cardTitle">
@@ -407,10 +411,10 @@
 								</div>
 							</div>
 							<p>
-								My first website, this website was our first school project
+								My first website, this was our first school project where we had to display our newly found HTML & CSS skills.
 							</p>
 							<p>
-								I had been given a list with things to implent on my website.
+								We had been given a list with things to implent on our websites.
 							</p>
 							<p>
 								A few examples of these are: gradient in the footer, dropdown menu, etc.
@@ -428,7 +432,7 @@
 				</div>
 			</div>
 			<!-- Contact tab --> 
-			<div id="contact" class="contact">
+			<div id="contact">
 				<h2>Get in touch with me!</h2>
 				<div class="projectCard">
 					<div class="cardTitle shrink">
@@ -448,27 +452,27 @@
 							<div class="holdsIcons">
 								<a class="clickable" href="mailto:julio.schilders@gmail.com" 
 								target="_top">
-								<img class="svg" src="media/svg/gmail.svg" alt="gmail icon">
+								<img class="svg gmail" src="media/svg/gmail.svg" alt="gmail icon">
 								<span>Julio.Schilders@gmail.com</span>
 							</a>
 						</div>
 					</div>		
 					<section>
-						<h4>Thanks for looking at my portfolio!</h4>
+						<h3>Thanks for looking at my portfolio!</h3>
 						<p>
 							Do you have a question for me, or perhaps some feedback?
-						<p>
-						<p>
-							Feel free to contact me, to let me know!
-						</p>
-					</section>
+							<p>
+								<p>
+									Feel free to contact me, to let me know!
+								</p>
+							</section>
+						</div>
+					</div>
 				</div>
-			</div>
+			</main>
+			<footer class="footer">
+				<span>&copy; Julio Schilders</span>
+			</footer>
 		</div>
-	</main>
-	<footer class="footer">
-		<span>&copy; Julio Schilders</span>
-	</footer>
-</div>
-</body>
-</html>
+	</body>
+	</html>
