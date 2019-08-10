@@ -80,7 +80,6 @@ body {
 
 .description span {
 	color: var(--text);
-	padding: .75rem 0 0;
 	font-size: 1rem;
 	font-style: italic;
 }
