@@ -104,7 +104,7 @@ body {
 .header a:first-child {
   color: var(--lightblue);
 	margin-left: 0;
-  margin-right: 8rem;
+  margin-right: calc((125% - 50rem) / 2);
 }
 
 .header a h1 {
@@ -115,6 +115,10 @@ body {
 .header a p {
 	font-size: 1rem;
 	margin: 0;
+}
+
+.header img {
+	width: 2rem;
 }
 
 /* Main section of page */
@@ -129,6 +133,7 @@ body {
 .main > div {
 	margin-bottom: 4rem;
 }
+
 
 .projectCard {
 	display: flex;
@@ -310,7 +315,6 @@ body {
 	
 	.header a:first-child {
 		margin-left: 1rem;
-		margin-right: 7rem;
 	}
 	
 	.header a:last-child {
@@ -363,7 +367,27 @@ body {
   }
 }
 
+@media only screen and (max-width: 450px) {
+	div.cardTitle.shrink {
+		margin-left: 20%;
+	}
+
+	.about .projectCard .cardTitle .languages {
+		flex-flow: column wrap;
+		align-items: flex-start;
+	}
+
+	.header a.linkedin {
+		display: none;
+	}
+}
+
+
 @media only screen and (max-width: 375px) {
+	.header a.github {
+		display: none;
+	}
+
 	.container h3 {
 		font-size: 1.4rem;
 	}
