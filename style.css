@@ -308,6 +308,12 @@ body {
 }
 
 /* Media queries for smaller screens */
+@media only screen and (max-width: 1000px) {
+	.header {
+		padding: .5rem 1rem;
+	}
+}
+
 @media only screen and (max-width: 850px) {
 	.header {
 		margin: 0;
@@ -358,6 +364,10 @@ body {
 		padding: 1rem;
 	}
 
+	.about .projectCard .cardTitle {
+		padding: .4rem;
+	}
+
 	.about .projectCard .cardTitle div {
 		justify-content: space-between;
 	}
@@ -368,7 +378,11 @@ body {
 }
 
 @media only screen and (max-width: 450px) {
-	.about div.cardTitle.shrink {
+	.langs, .packages, .other {
+		margin-left: 20%;
+	}
+
+	.frameworks .languages, .tools .languages{
 		margin-left: 20%;
 	}
 
