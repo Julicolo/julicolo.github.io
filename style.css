@@ -382,7 +382,11 @@ body {
 		margin-left: 20%;
 	}
 
-	.frameworks .languages, .tools .languages{
+	.frameworks h3, .tools h3 {
+		text-align:  center;
+	}
+
+	.frameworks .languages, .tools .languages {
 		margin-left: 20%;
 	}
 
