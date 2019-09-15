@@ -378,12 +378,12 @@ body {
 }
 
 @media only screen and (max-width: 450px) {
+	.projects h2, #contact h2, .frameworks h3, .tools h3 {
+		text-align: center;
+	}
+	
 	.langs, .packages, .other {
 		margin-left: 20%;
-	}
-
-	.frameworks h3, .tools h3 {
-		text-align:  center;
 	}
 
 	.frameworks .languages, .tools .languages {
