@@ -1,7 +1,7 @@
 @font-face {
   font-family: Karla;
   font-display: auto;
-  src: local('Karla'), url(media/Karla.ttf);
+  src: local('Karla'), url(assets/Karla.ttf);
 }
 
 :root {
@@ -42,6 +42,7 @@ body {
 }
 
 .container h2, h3 {
+	font-size: 2rem;
 	margin-top: 0;
 	color: var(--lightblue);
 	text-align: left;
@@ -55,7 +56,7 @@ body {
 
 .container h3 {
 	color: var(--text);
-	font-size: 1.7rem;
+	font-size: 1.6rem;
 	margin: 0;
 }
 
@@ -64,10 +65,6 @@ body {
   margin: 0;
   font-size: 1.2rem;
   padding: .25rem 0;
-}
-
-.container span {
-	padding-left: .2rem;
 }
 
 .container svg {
@@ -193,13 +190,14 @@ body {
 	margin: 0 .5rem;
 }
 
-.holdsIcon span {
-	font-size: 1rem;
+.holdsIcons span {
+	padding-left: .5rem;
 }
 
 .holdsIcons a {
 	display: flex;
 	align-items: center;
+	text-decoration: none;
 }
 
 .holdsIcons svg {
@@ -207,31 +205,44 @@ body {
 }
 
 .holdsIcons img {
-	width: 2.1rem;
+	width: 2rem;
 }
 
-.holdsIcons img.ts {
-	width: 1.8rem;
+.holdsIcons img.js {
+	background-color: black;
 }
 
-.holdsIcons img.js, .holdsIcons img.wp {
-	width: 2.4rem;
+.holdsIcons img.php {
+	width: 3rem;
 }
 
-.holdsIcons img.gmail, .holdsIcons img.npm {
-	width: 2.6rem;
+.holdsIcons img.python {
+	width: 2.5rem;
+}
+
+.holdsIcons img.babel {
+	width: 2.5rem;
+	background-color: #f6db55;
+}
+
+.holdsIcons img.ps {
+	background-color: rgb(2, 39, 49);
 }
 
 .holdsIcons img.mysql {
-	width: 3.5rem;
+	width: 4.5rem;
 }
 
 .screenshot {
+	display: flex;
+  justify-content: center;
 	flex: 1 0 20%;
 	padding-right: 1rem;
 }
 
 .screenshot img {
+	width: 100%;
+	min-width: 100%;
   max-width: 100%;
   min-width: 225px;
   height: auto;
@@ -350,4 +361,10 @@ body {
   .screenshot, .description p, .description span {
     padding-left: 1rem;
   }
-};
+}
+
+@media only screen and (max-width: 375px) {
+	.container h3 {
+		font-size: 1.4rem;
+	}
+}
