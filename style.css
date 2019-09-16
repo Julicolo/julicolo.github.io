@@ -92,11 +92,12 @@ body {
 	top: 0;
 	background-color: white;
 	box-shadow: 0px 4px 5px -4px #0000002e;
-	padding: .5rem calc((100% - 60rem) / 2);
+	padding: .1rem calc((100% - 60rem) / 2);
+	background-color: var(--nice);
 }
 
 .header a, .header span {
-  color: var(--darkblue);
+  color: white;
   text-decoration: none;
   font-size: 1.2rem;
 }
@@ -110,15 +111,23 @@ body {
 .header a h1 {
 	margin: 0;
 	font-size: 1.5rem;
+	color: white;
 }
 
 .header a p {
 	font-size: 1rem;
 	margin: 0;
+	color: white;
 }
 
 .header img {
 	width: 2rem;
+}
+
+.header a.linkedin img {
+  width: 2.1rem;
+  border-radius: 10%;
+  background-color: white;
 }
 
 /* Main section of page */
