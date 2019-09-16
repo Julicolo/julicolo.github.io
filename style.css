@@ -130,6 +130,10 @@ body {
   background-color: white;
 }
 
+.header a.github img {
+	background: radial-gradient(#fff 66%, black 70%);
+  border-radius: 50%;
+}
 /* Main section of page */
 
 .main {
