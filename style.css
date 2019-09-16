@@ -104,7 +104,7 @@ body {
 	background-color: white;
 	box-shadow: 0px 4px 5px -4px #0000002e;
 	padding: .1rem calc((100% - 60rem) / 2);
-	background-color: var(--nice);
+	background-color: var(--lightblue);
 }
 
 .mobile-menu {
