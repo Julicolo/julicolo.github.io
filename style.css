@@ -24,6 +24,16 @@ body {
 	margin: 0;
 }
 
+/* JavaScript classes */
+
+.open {
+	display: flex;
+}
+
+.closed {
+	display: none;
+}
+
 .container {
 	position: relative;
 	display: flex;
@@ -86,6 +96,7 @@ body {
 	flex-flow: row wrap;
 	justify-content: space-between;
 	align-items: center;
+	min-height: 55px;
 	width: 100%;
 	margin-bottom: 3rem;
 	position: fixed;
@@ -94,6 +105,10 @@ body {
 	box-shadow: 0px 4px 5px -4px #0000002e;
 	padding: .1rem calc((100% - 60rem) / 2);
 	background-color: var(--nice);
+}
+
+.mobile-menu {
+	display: none;
 }
 
 .header a, .header span {
@@ -120,12 +135,16 @@ body {
 	color: white;
 }
 
+.header .abbr {
+	display: none;
+}
+
 .header img {
 	width: 2rem;
 }
 
 .header a.linkedin img {
-  width: 2.1rem;
+  width: 2.2rem;
   border-radius: 10%;
   background-color: white;
 }
@@ -146,7 +165,6 @@ body {
 .main > div {
 	margin-bottom: 4rem;
 }
-
 
 .projectCard {
 	display: flex;
@@ -187,6 +205,7 @@ body {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	margin-bottom: 1rem;
 }
 
@@ -234,6 +253,14 @@ body {
 	width: 3rem;
 }
 
+.cardTitle.shrink .holdsIcons.php {
+	margin: 0 2rem 0 0;
+}
+
+.cardTitle.shrink .holdsIcons.composer {
+	margin: 0;
+}
+
 .holdsIcons img.python {
 	width: 2.5rem;
 }
@@ -260,9 +287,9 @@ body {
 
 .screenshot img {
 	width: 100%;
-	min-width: 100%;
-  max-width: 100%;
-  min-width: 225px;
+  max-width: 350px;
+  min-width: 250px;
+  max-height: 350px;
   height: auto;
   border: 1.5px solid lightgrey;
   border-radius: 5px;
@@ -315,7 +342,6 @@ body {
 	margin: 2rem 0 1rem;
 }
 
-
 .footer {
 	margin-bottom: 2%;
 }
@@ -323,13 +349,14 @@ body {
 /* Media queries for smaller screens */
 @media only screen and (max-width: 1000px) {
 	.header {
-		padding: .5rem 1rem;
+		padding: .1rem 1rem;
 	}
 }
 
 @media only screen and (max-width: 850px) {
 	.header {
 		margin: 0;
+		padding-left: 0;
 	}
 	
 	.header a:first-child {
@@ -345,18 +372,15 @@ body {
 	}
 }
 
-@media only screen and (max-width: 650px) {
-	.container {
-		padding-top: 2.5rem;
-	}
-
+@media only screen and (max-width: 675px) {
 	.header {
 		justify-content: space-evenly;
 		margin-left: 0;
+		padding-left: 1rem;
 		width: 100%;
 	}
 
-	.header a:first-child {
+	.header .logo {
 		display: none;
 		width: 100%;
 	}
@@ -365,14 +389,48 @@ body {
 		margin-right: 0;
 	}
 
-	.header a h1 {
-		font-size: 1rem;
+	.header .menu-item, .header .github, .header .linkedin {
+		display: none;
 	}
 
-	.header a p {
-		font-size: .7rem;
+	.header .bot-menu {
+		list-style: none;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		width: 100%;
+		border-top: 1px dotted white;
+    padding: .5rem 0;
 	}
-	
+
+	.top-menu {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		min-height: 55px;
+	}
+
+	.mobile-menu {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		width: 100%;
+		margin: 0 0.5rem;
+	}
+
+	.mobile-menu h3 {
+		color: white;
+	}
+
+	.mobile-menu a:first-child {
+		margin: 0;
+	}
+
+	.mobile-menu .github, .mobile-menu .linkedin {
+		display: flex;
+	}
+
 	.cardTitle {
 		padding: 1rem;
 	}
@@ -390,26 +448,26 @@ body {
   }
 }
 
-@media only screen and (max-width: 450px) {
-	.projects h2, #contact h2, .frameworks h3, .tools h3 {
-		text-align: center;
-	}
-	
-	.langs, .packages, .other {
-		margin-left: 20%;
-	}
-
-	.frameworks .languages, .tools .languages {
-		margin-left: 20%;
-	}
-
+@media only screen and (max-width: 600px) {
 	.about .projectCard .cardTitle .languages {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		flex-flow: column wrap;
-		align-items: flex-start;
 	}
 
-	.header a.linkedin {
-		display: none;
+	.cardTitle.shrink > div .holdsIcons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+	.holdsIcons {
+		margin: .5rem;
+	}
+
+	.projects h2, #contact h2, .cardTitle.shrink h3 {
+		text-align: center;
 	}
 }
 
@@ -426,11 +484,23 @@ body {
 }
 
 @media only screen and (max-width: 375px) {
-	.header a.github {
+	.header .mobile-logo {
 		display: none;
+	}
+
+	.header .abbr {
+		display: block;
+	}
+
+	.header {
+		padding: .1rem 0;
 	}
 
 	.container h3 {
 		font-size: 1.4rem;
+	}
+
+	.projects .holdsIcons {
+		margin: .5rem;
 	}
 }

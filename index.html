@@ -29,6 +29,7 @@
 	<meta property="og:image" content="assets/favicon.ico" />
 	<meta name="theme-color" content="#000000" />
 	<!-- Stylesheet & Script -->
+	<script defer src="script.js"></script>
 	<link rel="manifest" href="manifest.json" />
 	<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="style.css">
@@ -37,16 +38,16 @@
 <body>
 	<div class="container" id="top">
 		<header class="header">
-			<a href="#" rel="noopener noreferrer">
+			<a class="logo" href="#" rel="noopener noreferrer">
 				<section>
 					<h1>Julio Schilders</h1>
 					<p>Web Development Student</p>
 				</section>
 			</a>
-			<a href="#top" rel="noopener noreferrer">About</a>
-			<a href="#projects" rel="noopener noreferrer">Projects</a>
-			<a href="#contact" rel="noopener noreferrer">Contact</a>
-			<a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">
+			<a class="menu-item" href="#top" rel="noopener noreferrer">About</a>
+			<a class="menu-item" href="#projects" rel="noopener noreferrer">Projects</a>
+			<a class="menu-item" href="#contact" rel="noopener noreferrer">Contact</a>
+			<a class="menu-item" href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">
 				<span>Resume</span>
 			</a>
 			<a class="github" href="https://github.com/Julicolo" target="_blank" rel="noopener noreferrer">
@@ -55,6 +56,43 @@
 			<a class="linkedin" href="https://linkedin.com/in/julioschilders" target="_blank" rel="noopener noreferrer">
 				<img class="svg" src="assets/svg/linkedin.svg" alt="linkedin icon">
 			</a>
+			<div class="mobile-menu">
+				<div class="top-menu">
+					<a class="mobile-logo" href="#" rel="noopener noreferrer">
+						<section>
+							<h1>Julio Schilders</h1>
+							<p>Web Development Student</p>
+						</section>
+					</a>
+					<a class="abbr" href="#" rel="noopener noreferrer">
+						<section>
+							<h1>J Schilders</h1>
+							<p>Web Dev Student</p>
+						</section>
+					</a>
+					<a class="github" href="https://github.com/Julicolo" target="_blank" rel="noopener noreferrer">
+						<img class="svg" src="assets/svg/github.svg" alt="github icon">
+					</a>
+					<a class="linkedin" href="https://linkedin.com/in/julioschilders" target="_blank" rel="noopener noreferrer">
+						<img class="svg" src="assets/svg/linkedin.svg" alt="linkedin icon">
+					</a>
+					<img class="menu-icon" src="assets/svg/menu.svg" alt="menu icon">
+				</div>
+				<div class="bot-menu closed">
+					<a class="mobile-menu-item" href="#top" rel="noopener noreferrer">
+						<span>About</span>
+					</a>
+					<a class="mobile-menu-item" href="#projects" rel="noopener noreferrer">
+						<span>Projects</span>
+					</a>
+					<a class="mobile-menu-item" href="#contact" rel="noopener noreferrer">
+						<span>Contact</span>
+					</a>
+					<a class="mobile-menu-item" href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">
+						<span>Resume</span>
+					</a>
+				</div>
+			</div>
 		</header>
 		<main class="main">
 			<!-- About tab -->
@@ -93,17 +131,17 @@
 								</a>
 							</div>
 							<div class="holdsIcons">
-								<a href="https://www.php.net" target="_blank" rel="noopener noreferrer">
-									<img class="svg php" src="assets/svg/php.svg" alt="php icon">
-									<span>PHP</span>
-								</a>
-							</div>	
-							<div class="holdsIcons">
 								<a href="https://www.python.org" target="_blank" rel="noopener noreferrer">
 									<img class="svg python" src="assets/svg/python.svg" alt="python icon">
 									<span>Python</span>
 								</a>
 							</div>
+							<div class="holdsIcons php">
+								<a href="https://www.php.net" target="_blank" rel="noopener noreferrer">
+									<img class="svg php" src="assets/svg/php.svg" alt="php icon">
+									<span>PHP</span>
+								</a>
+							</div>	
 							<div class="holdsIcons">
 								<img class="svg" src="assets/svg/css3.svg" alt="css3 icon">
 								<span>CSS</span>
@@ -133,7 +171,7 @@
 								<a href="https://electronjs.org/" target="_blank" rel="noopener noreferrer">
 									<img class="svg" src="assets/svg/electron.svg" alt="electron icon">
 									<span>Electron</span>
-							</a>
+								</a>
 							</div>
 							<div class="holdsIcons">
 								<a href="https://expressjs.com/" target="_blank" rel="noopener noreferrer">
@@ -196,7 +234,7 @@
 									<span>NPM</span>
 								</a>
 							</div>
-							<div class="holdsIcons">
+							<div class="holdsIcons composer">
 								<a href="https://getcomposer.org/doc/00-intro.md" target="_blank" rel="noopener noreferrer">
 									<img class="svg" src="assets/svg/composer.png" alt="composer icon">
 									<span>Composer</span>
@@ -244,7 +282,7 @@
 				</div>
 				<div class="projectCard">
 					<div class="cardTitle shrink other">
-						<h3>Other</h3>
+						<h3>Other tools</h3>
 						<div class="languages">
 							<div class="holdsIcons">
 								<a href="https://github.com/Julicolo" target="_blank" rel="noopener noreferrer">
@@ -265,14 +303,14 @@
 								</a>
 							</div>
 							<div class="holdsIcons">
-								<img class="svg" src="assets/svg/seo.svg" alt="seo icon">
-								<span>SEO</span>
-							</div>
-							<div class="holdsIcons">
 								<a href="https://www.mysql.com/" target="_blank" rel="noopener noreferrer">
 									<img class="svg mysql" src="assets/svg/mysql.svg" alt="mysql icon">
 									<span>MySQL</span>
 								</a>
+							</div>
+							<div class="holdsIcons">
+								<img class="svg" src="assets/svg/seo.svg" alt="seo icon">
+								<span>SEO</span>
 							</div>
 						</div>
 					</div>		
@@ -393,7 +431,7 @@
 								The bot has generic admin commands to bulk delete messages, kick users, etc.
 							</p>
 							<p>
-								The bot also has a set of fun commands, it can play music, compare Leaugue of Legends ranked stats, etc.
+								The bot also has a set of fun commands, it can play music, compare League of Legends ranked stats, etc.
 							</p>
 							<br>
 							<p>
