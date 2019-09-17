@@ -144,17 +144,19 @@ body {
 }
 
 .header a.linkedin img {
-  width: 35px; 
-  width: 2.2rem;
   border-radius: 10%;
   background: radial-gradient(white 66%, #0077b5 70%);
 }
 
 .header a.github img {
 	background: radial-gradient(#fff 66%, black 70%);
-  width: 32px; 
   border-radius: 50%;
 }
+
+.header a.github img, .header a.linkedin img {
+  width: 40px;
+  height: 40px;
+} 
 /* Main section of page */
 
 .main {
