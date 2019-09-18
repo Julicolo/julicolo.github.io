@@ -265,6 +265,10 @@ body {
 	width: 2.5rem;
 }
 
+.holdsIcons img.sass {
+	width: 2.5rem;
+}
+
 .holdsIcons img.babel {
 	width: 2.5rem;
 	background-color: #f6db55;
