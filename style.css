@@ -144,7 +144,6 @@ body {
 }
 
 .header a.linkedin img {
-  width: 2.2rem;
   border-radius: 10%;
   background: radial-gradient(white 66%, #0077b5 70%);
 }
@@ -153,6 +152,11 @@ body {
 	background: radial-gradient(#fff 66%, black 70%);
   border-radius: 50%;
 }
+
+.header a.github img, .header a.linkedin img {
+  width: 40px;
+  height: 40px;
+} 
 /* Main section of page */
 
 .main {
