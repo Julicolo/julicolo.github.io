@@ -1,13 +1,13 @@
 @font-face {
-  font-family: Karla;
-  font-display: auto;
-  src: local('Karla'), url(assets/Karla.ttf);
+	font-family: Karla;
+	font-display: auto;
+	src: local('Karla'), url(assets/Karla.ttf);
 }
 
 :root {
 	--nice: rgb(110, 163, 242);
-	--lightblue: #4c8ff3;
-	--darkblue: #146ef5;
+	--lightblue: #538fe9;
+	--darkblue: #3e69ac;
 	--text: #45515d;
 }
 
@@ -15,11 +15,13 @@
 	box-sizing: border-box;
 }
 
-html, body, .container {
+html,
+body,
+.container {
 	min-height: 100vh;
 }
 
-body {	
+body {
 	padding: 0;
 	margin: 0;
 }
@@ -44,14 +46,15 @@ body {
 	text-align: center;
 	color: var(--text);
 	width: 100%;
-	padding-top: 90px;
+	padding-top: 75px;
 }
 
 .container h2.noborder {
 	font-size: 1.8rem;
 }
 
-.container h2, h3 {
+.container h2,
+h3 {
 	font-size: 2rem;
 	margin-top: 0;
 	color: var(--lightblue);
@@ -59,22 +62,23 @@ body {
 }
 
 .container h2:not(.noborder) {
-	border-bottom: .25rem dotted lightgrey;
+	border-bottom: 0.25rem dotted lightgrey;
 	padding-bottom: 1rem;
 	margin-bottom: 3rem;
+	color: var(--darkblue);
 }
 
 .container h3 {
-	color: var(--text);
+	color: var(--lightblue);
 	font-size: 1.6rem;
 	margin: 0;
 }
 
-.container p, .container span {
-  color: var(--text);
-  margin: 0;
-  font-size: 1.2rem;
-  padding: .25rem 0;
+.container p,
+.container span {
+	color: var(--text);
+	margin: 0;
+	font-size: 1.2rem;
 }
 
 .container svg {
@@ -83,6 +87,7 @@ body {
 
 .cardTitle section p {
 	font-size: 1.2rem;
+	margin: 1rem 0;
 }
 
 .description span {
@@ -103,7 +108,7 @@ body {
 	top: 0;
 	background-color: white;
 	box-shadow: 0px 4px 5px -4px #0000002e;
-	padding: .1rem calc((100% - 60rem) / 2);
+	padding: 0.1rem calc((100% - 65rem) / 2);
 	background-color: var(--darkblue);
 }
 
@@ -111,16 +116,17 @@ body {
 	display: none;
 }
 
-.header a, .header span {
-  color: white;
-  text-decoration: none;
-  font-size: 1.2rem;
+.header a,
+.header span {
+	color: white;
+	text-decoration: none;
+	font-size: 1.2rem;
 }
 
 .header a:first-child {
-  color: var(--lightblue);
+	color: var(--lightblue);
 	margin-left: 0;
-  margin-right: calc((125% - 50rem) / 2);
+	margin-right: calc((125% - 50rem) / 2);
 }
 
 .header a h1 {
@@ -144,51 +150,73 @@ body {
 }
 
 .header a.linkedin img {
-  border-radius: 10%;
-  background: radial-gradient(white 66%, #0077b5 70%);
+	border-radius: 10%;
+	background: radial-gradient(white 66%, #0077b5 70%);
 }
 
 .header a.github img {
 	background: radial-gradient(#fff 66%, black 70%);
-  border-radius: 50%;
+	border-radius: 50%;
 }
 
-.header a.github img, .header a.linkedin img {
-  width: 40px;
-  height: 40px;
-} 
+.header a.github img,
+.header a.linkedin img {
+	width: 40px;
+	height: 40px;
+}
 /* Main section of page */
 
 .main {
 	display: flex;
 	flex-flow: column wrap;
 	align-content: center;
-	margin: .5rem 1rem;
+	margin: 0.5rem 1rem;
+	max-width: 65rem;
 }
 
 .main > div {
 	margin-bottom: 4rem;
 }
+	
+.about .projectCard {
+	margin-bottom: 2.5rem;
+}
+
+.about .projectCard:not(:first-child) {
+	height: 150px;
+}
+
+.about div.projectCard:last-child {
+	margin-bottom: 0;
+}
 
 .projectCard {
 	display: flex;
-	flex-flow: row wrap;
-	border-radius: .3rem;
+	flex-flow: column nowrap;
+	border-radius: 0.3rem;
+	margin-bottom: 5rem;
 	max-width: 60rem;
 	width: 100%;
-	margin-bottom: 4rem;
-	align-items: stretch;
+	justify-content: space-around;
 	text-align: left;
+	border-radius: 20px;
+}
+
+.projectCard:nth-child(odd) {
+	margin-right: 2.5rem;
+}
+
+.projects {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
 }
 
 .projectCard .clickable {
-  text-decoration: none;
-  display: flex;
-  flex-flow: row wrap;
-}
-
-.projects .projectCard:not(:last-of-type) {
-	margin-bottom: 10rem;
+	text-decoration: none;
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
 }
 
 .projectCard .shrink {
@@ -199,23 +227,34 @@ body {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+	min-height: 50px;
 }
 
-.projectCard .cardTitle.shrink h3 {
+.projectCard .cardTitle .project-header {
+	justify-content: space-between;
 	margin: 1rem 0;
+	width: 100%;
+}
+
+.projectCard .languages .holdsIcons:not(:last-child) {
+	margin: 0 1rem 0 0;
 }
 
 .cardTitle {
 	width: 100%;
 	display: flex;
+	flex-flow: column wrap;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
 	margin-bottom: 1rem;
+}
+
+.cardTitle h3 {
+	font-size: 2rem;
 }
 
 .languages {
 	flex-flow: row wrap;
-	justify-content: flex-start;
 }
 
 .cardTitle.shrink > div .holdsIcons {
@@ -227,12 +266,8 @@ body {
 	border-bottom: 4px dotted lightgrey;
 }
 
-.holdsIcons {
-	margin: 0 .5rem;
-}
-
 .holdsIcons span {
-	padding-left: .5rem;
+	padding-left: 0.5rem;
 }
 
 .holdsIcons a {
@@ -286,91 +321,128 @@ body {
 	width: 4.5rem;
 }
 
+.projects .projectCard {
+	max-width: 29rem;
+	min-height: 45rem;
+	box-shadow: 0px 0px 12px -4px #0000002e;
+}
+
+.projects .projectCard h3 {
+	color: var(--darkblue);
+}
+
+.projects .projectCard > div:not(:first-child) {
+	padding: 1rem;
+}
+
 .screenshot {
 	display: flex;
-  justify-content: center;
-	flex: 1 0 20%;
-	padding-right: 1rem;
+	justify-content: center;
+	box-shadow: 0px 10px 20px -20px #0000002e;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
 }
 
 .screenshot img {
 	width: 100%;
-  max-width: 350px;
-  min-width: 250px;
-  max-height: 350px;
-  height: auto;
-  border: 1.5px solid lightgrey;
-  border-radius: 5px;
-  box-shadow: 0px 5px 4px -4px #0000002e;
+	max-height: 350px;
+	height: auto;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
 }
 
 .holdsButtons {
-	flex-flow: row wrap;
-	justify-content: flex-end;
-	margin: 1rem 0 0 auto;
+	display: flex;
+	flex-flow: row-reverse wrap;
+	justify-content: space-between;
+	width: 100%;
+	/*margin: auto 0 0 auto;*/
 }
 
 .holdsButtons a {
-  display: inline-block;
+	display: inline-block;
+}
+
+.holdsButtons.only-demo {
+	flex-flow: row wrap;
 }
 
 .description {
-	flex: 1 0 60%;
-	justify-content: flex-start;
-	text-align: left;
+	flex: 1 0 40%;
 	display: flex;
 	flex-flow: column wrap;
+	justify-content: flex-start;
+	text-align: left;
 }
 
-.description p {
+.description ul {
+	padding-left: 1rem;
 	margin: 0;
-  color: var(--text);
-  text-decoration: none;
+	color: var(--text);
+	text-decoration: none;
 	font-size: 1.1rem;
 }
 
+.description ul li {
+	margin-bottom: 1rem;
+}
+
 .projectCard .button {
-	margin: .5rem;
-	padding: .6rem;
+	padding: 0.6rem;
 	background-color: var(--darkblue);
-  text-decoration: none;
+	text-decoration: none;
 	color: white;
 	border: none;
-	border-radius: .2rem;
-	font-size: .8rem;
+	min-width: 8rem;
+	border-radius: 1.5rem;
+	font-size: 1rem;
+	text-align: center;
 	outline: none;
 	box-shadow: 0px 5px 4px -4px #0000002e;
 }
 
 #contact h2 {
-  margin-bottom: 1rem;
+	margin-bottom: 1rem;
 }
 
 #contact h3 {
-	margin: 2rem 0 1rem;
+	margin-bottom: 1rem;
+	text-align: left;
 }
 
 .footer {
-	margin-bottom: 2%;
+	height: 2rem;
+	width: 100%;
+	background: var(--darkblue);
+}
+
+.footer span {
+	color: white;
+	padding: 0;
 }
 
 /* Media queries for smaller screens */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1024px) {
 	.header {
-		padding: .1rem 1rem;
+		padding: 0.1rem 1rem;
 	}
+
+	.projects {
+		justify-content: center;
+	}
+
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 900px) {
 	.header {
 		margin: 0;
 		padding-left: 0;
 	}
-	
+
 	.header a:first-child {
 		margin-left: 1rem;
 	}
-	
+
 	.header a:last-child {
 		margin-right: 1rem;
 	}
@@ -378,9 +450,17 @@ body {
 	.projectCard {
 		width: 100%;
 	}
+
+	.projectCard:nth-child(odd) {
+		margin-right: 0;
+	}
 }
 
 @media only screen and (max-width: 675px) {
+	.container h3 {
+		text-align: center;
+	}
+
 	.header {
 		justify-content: space-evenly;
 		margin-left: 0;
@@ -397,7 +477,9 @@ body {
 		margin-right: 0;
 	}
 
-	.header .menu-item, .header .github, .header .linkedin {
+	.header .menu-item,
+	.header .github,
+	.header .linkedin {
 		display: none;
 	}
 
@@ -407,7 +489,18 @@ body {
 		justify-content: space-between;
 		width: 100%;
 		border-top: 1px dotted white;
-    padding: .5rem 0;
+		padding: 0.5rem 0;
+	}
+
+	.about .projectCard .cardTitle .languages {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: column wrap;
+	}
+
+	.about .projectCard:not(:first-child) {
+		height: auto;
 	}
 
 	.top-menu {
@@ -435,46 +528,34 @@ body {
 		margin: 0;
 	}
 
-	.mobile-menu .github, .mobile-menu .linkedin {
+	.mobile-menu .github,
+	.mobile-menu .linkedin {
 		display: flex;
 	}
 
-	.cardTitle {
-		padding: 1rem;
-	}
-
 	.about .projectCard .cardTitle {
-		padding: .4rem;
+		padding: 0.4rem;
 	}
 
 	.about .projectCard .cardTitle div {
 		justify-content: space-between;
 	}
-
-  .screenshot, .description p, .description span {
-    padding-left: 1rem;
-  }
 }
 
 @media only screen and (max-width: 600px) {
-	.about .projectCard .cardTitle .languages {
+	.cardTitle.shrink > div .holdsIcons {
+		width: 100%;
 		display: flex;
 		justify-content: center;
-		align-items: center;
-		flex-flow: column wrap;
 	}
-
-	.cardTitle.shrink > div .holdsIcons {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
 
 	.holdsIcons {
-		margin: .5rem;
+		margin: 0.5rem;
 	}
 
-	.projects h2, #contact h2, .cardTitle.shrink h3 {
+	.projects h2,
+	#contact h2,
+	.cardTitle.shrink h3 {
 		text-align: center;
 	}
 }
@@ -488,7 +569,6 @@ body {
 		display: flex;
 		flex-flow: column wrap;
 	}
-
 }
 
 @media only screen and (max-width: 375px) {
@@ -501,14 +581,15 @@ body {
 	}
 
 	.header {
-		padding: .1rem 0;
+		padding: 0.1rem 0;
 	}
 
-	.container h3 {
-		font-size: 1.4rem;
+	#contact section h3 {
+		font-size: 1.3rem;
+		text-align: left;
 	}
 
 	.projects .holdsIcons {
-		margin: .5rem;
+		margin: 0.5rem;
 	}
 }

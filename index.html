@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 	<!-- Meta tags -->
@@ -117,8 +116,8 @@
 					</div>
 				</div>
 				<div class="projectCard">
+					<h3>Languages</h3>
 					<div class="cardTitle shrink langs">
-						<h3>Languages</h3>
 						<div class="languages">
 							<div class="holdsIcons">
 								<img class="svg js" src="assets/svg/javascript.svg" alt="javascript icon">
@@ -158,8 +157,8 @@
 					</div>	
 				</div>
 				<div class="projectCard">
+					<h3>Frameworks & Libraries</h3>
 					<div class="cardTitle shrink frameworks">
-						<h3>Frameworks & Libraries</h3>
 						<div class="languages">
 							<div class="holdsIcons">
 								<a href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
@@ -195,8 +194,8 @@
 					</div>		
 				</div>
 				<div class="projectCard">
+					<h3>Tools & Package Managers</h3>
 					<div class="cardTitle shrink tools">
-						<h3>Tools & Package Managers</h3>
 						<div class="languages">
 							<div class="holdsIcons">
 								<a href="https://nodejs.org/en/about/" target="_blank" rel="noopener noreferrer">
@@ -244,8 +243,8 @@
 					</div>
 				</div>
 				<div class="projectCard">
+					<h3>Familiar packages</h3>
 					<div class="cardTitle shrink packages">
-						<h3>Familiar packages</h3>
 						<div class="languages">
 							<div class="holdsIcons">
 								<a href="https://webpack.js.org/" target="_blank" rel="noopener noreferrer">
@@ -281,19 +280,19 @@
 					</div>
 				</div>
 				<div class="projectCard">
+					<h3>Other tools</h3>
 					<div class="cardTitle shrink other">
-						<h3>Other tools</h3>
 						<div class="languages">
-							<div class="holdsIcons">
-								<a href="https://github.com/Julicolo" target="_blank" rel="noopener noreferrer">
-									<img class="svg" src="assets/svg/github.svg" alt="github icon">
-									<span>GitHub</span>
-								</a>
-							</div>
 							<div class="holdsIcons">
 								<a href="https://www.mysql.com/" target="_blank" rel="noopener noreferrer">
 									<img class="svg mysql" src="assets/svg/mysql.svg" alt="mysql icon">
 									<span>MySQL</span>
+								</a>
+							</div>
+							<div class="holdsIcons">
+								<a href="https://github.com/Julicolo" target="_blank" rel="noopener noreferrer">
+									<img class="svg" src="assets/svg/github.svg" alt="github icon">
+									<span>GitHub</span>
 								</a>
 							</div>
 							<div class="holdsIcons">
@@ -305,7 +304,7 @@
 							<div class="holdsIcons">
 								<a href="https://www.adobe.com/products/photoshop.html" target="_blank" rel="noopener noreferrer">
 									<img class="svg ps" src="assets/svg/photoshop.svg" alt="photoshop icon">
-									<span>PhotoShop</span>
+									<span>Photoshop</span>
 								</a>
 							</div>
 							<div class="holdsIcons">
@@ -318,321 +317,318 @@
 			</div>
 			<div id="projects"></div>
 			<!-- Projects tab -->
+			<h2>Projects</h2>
 			<div class="projects">
-				<h2>Projects</h2>
 				<div class="projectCard">
-					<a class="clickable" href="https://github.com/Julicolo/youtube-downloader" target="_blank" rel="noopener noreferrer">
-						<div class="screenshot">
+					<div class="screenshot">
+						<a class="clickable" href="https://github.com/Julicolo/youtube-downloader" target="_blank" rel="noopener noreferrer">
 							<img src="assets/projects/youtube-downloader.jpg" alt="youtube downloader project">
-						</div>
-						<div class="description">
-							<div class="cardTitle">
+						</a>
+					</div>
+					<div class="description">
+						<div class="cardTitle">
+							<div class="project-header">
 								<h3>Youtube Downloader</h3>
-								<div class="languages">
-									<div class="holdsIcons">
-										<img class="svg" src="assets/svg/electron.svg" alt="electron icon">
-									</div>
-									<div class="holdsIcons">
-										<img class="svg" src="assets/svg/react.svg" alt="react icon">
-									</div>
-										<div class="holdsIcons">
-										<img class="svg" src="assets/svg/python.svg" alt="python icon">
-									</div>
-									<div class="holdsIcons">
-										<img class="svg sass" src="assets/svg/sass.svg" alt="sass icon">
-									</div>
-									<div class="holdsIcons">
-										<img class="svg" src="assets/svg/typescript.svg" alt="typescript icon">
-									</div>
+								<span>IN PROGRESS</span>
+							</div>
+							<div class="languages">
+								<div class="holdsIcons">
+									<img class="svg" src="assets/svg/electron.svg" alt="electron icon">
+								</div>
+								<div class="holdsIcons">
+									<img class="svg" src="assets/svg/react.svg" alt="react icon">
+								</div>
+								<div class="holdsIcons">
+									<img class="svg" src="assets/svg/python.svg" alt="python icon">
+								</div>
+								<div class="holdsIcons">
+									<img class="svg sass" src="assets/svg/sass.svg" alt="sass icon">
+								</div>
+								<div class="holdsIcons">
+									<img class="svg" src="assets/svg/typescript.svg" alt="typescript icon">
 								</div>
 							</div>
-							<p>
-								My dad mentioned that he had issues downloading YouTube videos, and asked if I had an application that can download videos.<br>
-								I didn't so, so I decided to make my own. :)
-							</p>
-							<p>
-								This is a simple Electron app written in TypeScript, using React for the UI and Python for the backend.
-							</p>
-							<p>
-								Webpack is used for bundling the assets, compiling the Sass and TypeScript.
-							</p>
 						</div>
-					</a>
+						<ul>
+							<li>Chrome desktop app built with Electron</li>
+							<li>React with TypeScript for the GUI.</li>
+							<li>Users can select a download folder & YouTube URL.</li>
+							<li>Fetches video data from Google's video data API.</li>
+							<li>Queue system and users can click on a video to remove it from the download queue.</li>
+						</ul>
+					</div>
 					<div class="holdsButtons">
 						<a class="button" href="https://github.com/Julicolo/youtube-downloader" target="_blank" rel="noopener noreferrer">
-							View code on GitHub
+							View source
 						</a>
 					</div>
 				</div>
 				<div class="projectCard">
-					<a class="clickable" href="https://julicolo.github.io/shopia" target="_blank" rel="noopener noreferrer">
-						<div class="screenshot">
+					<div class="screenshot">
+						<a class="clickable" href="https://julicolo.github.io/shopia" target="_blank" rel="noopener noreferrer">
 							<img src="assets/projects/shopia.jpg" alt="shopia project" width="450" height="300">
-						</div>
-						<div class="description">
-							<div class="cardTitle">
+						</a>
+					</div>
+					<div class="description">
+						<div class="cardTitle">
+							<div class="project-header">
 								<h3>Shopia</h3>
-								<div class="languages">
-									<div class="holdsIcons">
-										<img class="svg" src="assets/svg/react.svg" alt="react icon">
-									</div>
-									<div class="holdsIcons">
-										<span>💅</span>
-									</div>
+								<span>IN PROGRESS</span>
+							</div>
+							<div class="languages">
+								<div class="holdsIcons">
+									<img class="svg" src="assets/svg/react.svg" alt="react icon">
+								</div>
+								<div class="holdsIcons">
+									<span>💅</span>
 								</div>
 							</div>
-							<p>
-								Shopia is a webshop aimed towards gamers, that's why it features darker colors than your average webshop.
-							</p>
-							<p>
-								This was a great project to get a deeper understanding of React, Webpack and React Router.
-							</p>
-							<p>
-								This is also the first time I've written React hooks and using the build in context api to manage the shoppingcart state.
-							</p>
-							<p>
-								The landing pages features multiple horizontal sliders, a shoppingcart and there will be a caroussel on the console page
-							</p>
 						</div>
-					</a>
+						<ul>
+							<li>Gaming themed store that sells games & consoles</li>
+							<li>Features React hooks and the context API.</li>
+							<li>Styled Components to try the CSS in JS approach.</li>
+							<li>Horizontal sliders & working shopping cart</li>
+							<li>React Router to do all the routing.</li>
+						</ul>
+					</div>
 					<div class="holdsButtons">
 						<a class="button" href="https://github.com/Julicolo/shopia" target="_blank" rel="noopener noreferrer">
-							View code on GitHub
+							View source
 						</a>
 						<a class="button" href="https://julicolo.github.io/shopia" target="_blank" rel="noopener noreferrer">
-							Go to project
+							Demo
 						</a>
 					</div>
 				</div>
 				<div class="projectCard">
-					<a class="clickable" href="https://github.com/Julicolo/JanitorJoe" target="_blank" rel="noopener noreferrer">
-						<div class="screenshot">
-							<img src="assets/svg/discord.svg" alt="discord logo">
-						</div>
-						<div class="description">
-							<div class="cardTitle">
-								<h3>Janitor Joe</h3>
-								<div class="languages">
-									<div class="holdsIcons">
-										<img class="svg" src="assets/svg/typescript.svg" alt="typescript icon">
-									</div>
-									<div class="holdsIcons">
-										<img class="svg js" src="assets/svg/javascript.svg" alt="javascript icon">
-									</div>
-								</div>
-							</div>
-							<p>
-								Janitor Joe is a Discord bot that can be added to your Discord server(s).
-							</p>
-							<p>
-								This was originally written in TypeScript and then rewritten in plain JavaScript.
-							</p>
-							<p>
-								The bot has generic admin commands to bulk delete messages, kick users, etc.
-							</p>
-							<p>
-								The bot also has a set of fun commands, it can play music, compare League of Legends ranked stats, etc.
-							</p>
-							<br>
-							<p>
-								For a full list of commands, take a look at the GitHub repo!
-							</p>
-							<span>Discord is a voice and video chatting platform</span>
-						</div>
-					</a>
-					<div class="holdsButtons">
-						<a class="button" href="https://github.com/Julicolo/janitor-joe" target="_blank" rel="noopener noreferrer">
-							View code on GitHub
-						</a>
-					</div>
-				</div>
-				<div class="projectCard">
-					<a class="clickable" href="https://julicolo.github.io/react-pokedex" target="_blank" rel="noopener noreferrer">
-						<div class="screenshot">
+					<div class="screenshot">
+						<a class="clickable" href="https://julicolo.github.io/react-pokedex" target="_blank" rel="noopener noreferrer">
 							<img src="assets/projects/pokedex.jpg" alt="pokedex project" width="450" height="300">
-						</div>
-						<div class="description">
-							<div class="cardTitle">
+						</a>
+					</div>
+					<div class="description">
+						<div class="cardTitle">
+							<div class="project-header">
 								<h3>Pokedex</h3>
-								<div class="languages">
-									<div class="holdsIcons">
-										<img class="svg" src="assets/svg/react.svg" alt="html5 icon">
-									</div>
-									<div class="holdsIcons">
-										<img class="svg" src="assets/svg/express.png" alt="express.js icon">
-									</div>
-									<div class="holdsIcons">
-										<img class="svg sass" src="assets/svg/sass.svg" alt="css3 icon">
-									</div>
+								<span>IN PROGRESS</span>
+							</div>
+							<div class="languages">
+								<div class="holdsIcons">
+									<img class="svg" src="assets/svg/react.svg" alt="html5 icon">
+								</div>
+								<div class="holdsIcons">
+									<img class="svg" src="assets/svg/express.png" alt="express.js icon">
+								</div>
+								<div class="holdsIcons">
+									<img class="svg sass" src="assets/svg/sass.svg" alt="css3 icon">
 								</div>
 							</div>
-							<p>
-								A Pokedex web app that fetches data from PokeApi.
-							</p>
-							<p>
-								In development mode it caches all api requests using Express, to reduce stress on the PokeApi.<br>
-								It loads more Pokemon as you scroll down the list to reduce amount of Api calls made overall.
-							</p>
-							<br>
-							<p>
-								When clicked on a Pokemon it will display some information about the Pokemon, such as: it's Pokedex entry, it's stats, typing, etc.<br>
-								Features a toggle to change the sprites to their shiny variant.
-							</p>
 						</div>
-					</a>
+						<ul>
+							<li>A Pokedex web app that fetches data from PokeApi.</li>
+							<li>In development mode it caches api requests using Express.</li>
+							<li>Loads more Pokemon as you scroll down to reduce amount of API calls made overall.</li>
+							<li>Shows more information about the Pokemon when clicked.</li>
+							<li>Helped me get a better understanding of React props, JSON, objects and how to use API's.</li>
+						</ul>
+					</div>
 					<div class="holdsButtons">
 						<a class="button" href="https://github.com/Julicolo/react-pokedex" target="_blank" rel="noopener noreferrer">
-							View code on GitHub
+							View source
 						</a>
 						<a class="button" href="https://julicolo.github.io/react-pokedex" target="_blank" rel="noopener noreferrer">
-							Go to project
+							Demo
 						</a>
 					</div>
 				</div>
 				<div class="projectCard">
-					<a class="clickable" href="https://julicolo.github.io/react-todo-list" target="_blank" rel="noopener noreferrer">
-						<div class="screenshot">
-							<img src="assets/projects/todo.png" alt="todo app project" width="450" height="300">
+					<div class="screenshot">
+						<a class="clickable" href="https://github.com/Julicolo/JanitorJoe" target="_blank" rel="noopener noreferrer">
+							<img src="assets/svg/discord.svg" alt="discord logo">
+						</a>
+					</div>
+					<div class="description">
+						<div class="cardTitle">
+							<div class="project-header">
+								<h3>Discord bot</h3>
+							</div>
+							<div class="languages">
+								<div class="holdsIcons">
+									<img class="svg js" src="assets/svg/javascript.svg" alt="javascript icon">
+								</div>
+								<div class="holdsIcons">
+									<img class="svg" src="assets/svg/typescript.svg" alt="typescript icon">
+								</div>
+							</div>
 						</div>
-						<div class="description">
-							<div class="cardTitle">
-								<h3>Todo app</h3>
+						<ul>
+							<li>Discord bot that can be added to Discord servers.</li>
+							<li>Written in TypeScript and rewritten in JavaScript.</li>
+							<li>Has admin commands to delete bulk messages, change region, kick & ban users.</li>
+							<li>Talks to the reddit API to get a random "TIFU" post.</li>
+							<li>A queue system to play YouTube videos (audio), every server will have it's own queue system.</li>
+							<li>Scrapes a website for user data for an online game, users can compare this data with other users.</li>
+							<li>Returns a random character for a game, if given a "role" it will return a character for that "role".</li>
+						</ul>
+					<span>For a full list of commands, take a look at the GitHub repo!</span>
+					</div>
+					<div class="holdsButtons">
+						<a class="button" href="https://github.com/Julicolo/janitor-joe" target="_blank" rel="noopener noreferrer">
+							View source
+						</a>
+					</div>
+				</div>
+				<div class="projectCard">
+					<div class="screenshot">
+						<a class="clickable" href="http://cursist38.reacollege.eu/projects/kukomo/" target="_blank" rel="noopener noreferrer">
+							<img src="assets/projects/kukomo.jpg" alt="KuKoMo project" width="450" height="300">
+						</a>
+					</div>
+					<div class="description">
+						<div class="cardTitle">
+							<div class="project-header">
+								<h3>KuKoMo</h3>
+							</div>
+							<div class="languages">
 								<div class="languages">
 									<div class="holdsIcons">
-										<img class="svg" src="assets/svg/react.svg" alt="react icon">
-									</div>	
+										<img class="svg wp" src="assets/svg/wordpress.svg" alt="wordpress icon">
+									</div>
 									<div class="holdsIcons">
 										<img class="svg" src="assets/svg/css3.svg" alt="css3 icon">
 									</div>
 								</div>
 							</div>
-							<p>
-								A simple React todo list which was a nice project to get started with React.
-							</p>
-							<p>
-								Users are able to add things to do, remove those todos or clear all the todos at once.
-							</p>
-							<p>
-								Features drag and drop with an indicator of where the element will be dropped, to boost user experience.
-							</p>
 						</div>
-					</a>
+						<ul>
+							<li>Company website that sells plastic window frames.</li>
+							<li>Uses WordPress for the backend as CMS.</li>
+							<li>Features a slider with animation.</li>
+							<li>Working contact form and SEO done.</li>
+							<li>Photogallery with a lightbox on click.</li>
+						</ul>
+					</div>
+					<div class="holdsButtons only-demo">
+						<a class="button" href="http://cursist38.reacollege.eu/projects/kukomo/" target="_blank" rel="noopener noreferrer">
+							Demo
+						</a>
+					</div>
+				</div>
+				<div class="projectCard">
+					<div class="screenshot">
+						<a class="clickable" href="https://julicolo.github.io/react-todo-list" target="_blank" rel="noopener noreferrer">
+							<img src="assets/projects/todo.jpg" alt="todo app project" width="450" height="300">
+						</a>
+					</div>
+					<div class="description">
+						<div class="cardTitle">
+							<div class="project-header">
+								<h3>Todo app</h3>
+							</div>
+							<div class="languages">
+								<div class="holdsIcons">
+									<img class="svg" src="assets/svg/react.svg" alt="react icon">
+								</div>	
+								<div class="holdsIcons">
+									<img class="svg" src="assets/svg/css3.svg" alt="css3 icon">
+								</div>
+							</div>
+						</div>
+						<ul>
+							<li>React todo list.</li>
+							<li>Delete individual todo's or the whole list.</li>
+							<li>Features drag and drop.</li>
+							<li>Checks off todo's on click, with an animation.</li>
+							<li>Displays a message based on progress with todo's.</li>
+						</ul>
+					</div>
 					<div class="holdsButtons">
 						<a class="button" href="https://github.com/Julicolo/react-todo-list" target="_blank" rel="noopener noreferrer">
-							View code on GitHub
+							View Source
 						</a>
 						<a class="button" href="https://julicolo.github.io/react-todo-list" target="_blank" rel="noopener noreferrer">
-							Go to project
+							Demo
 						</a>
 					</div>
 				</div>
 				<div class="projectCard">
-					<a class="clickable" href="http://cursist38.reacollege.eu/projects/kukomo/" target="_blank" rel="noopener noreferrer">
-						<div class="screenshot">
-							<img src="assets/projects/kukomo.png" alt="KuKoMo project" width="450" height="300">
-						</div>
-						<div class="description">
-							<div class="cardTitle">
-								<h3>KuKoMo</h3>
-								<div class="languages">
-									<div class="languages">
-										<div class="holdsIcons">
-											<img class="svg wp" src="assets/svg/wordpress.svg" alt="wordpress icon">
-										</div>
-										<div class="holdsIcons">
-											<img class="svg" src="assets/svg/css3.svg" alt="css3 icon">
-										</div>
-									</div>
-								</div>
-							</div>
-							<p>
-								For this assignment I had to make a website for a fictional client, that specialises in selling plastic window frames.
-							</p>
-							<p>
-								There's a slider on the landing page, the website also has a photo gallery, and a functional contact form.
-							</p>
-							<p>
-								The website has been made with Wordpress as a CMS.
-							</p>
-						</div>
-					</a>
-					<div class="holdsButtons">
-						<a class="button" href="http://cursist38.reacollege.eu/projects/kukomo/" target="_blank" rel="noopener noreferrer">
-							Go to project
+					<div class="screenshot">
+						<a class="clickable" href="https://julicolo.github.io/embed" target="_blank" rel="noopener noreferrer">
+							<img src="assets/projects/embed.jpg" alt="Embed project" width="450" height="300">
 						</a>
 					</div>
-				</div>
-				<div class="projectCard">
-					<a class="clickable" href="https://julicolo.github.io/embed" target="_blank" rel="noopener noreferrer">
-						<div class="screenshot">
-							<img src="assets/projects/embed.png" alt="Embed project" width="450" height="300">
-						</div>
-						<div class="description">
-							<div class="cardTitle">
+					<div class="description">
+						<div class="cardTitle">
+							<div class="project-header">
 								<h3>Embed</h3>
-								<div class="languages">
-									<div class="holdsIcons">
-										<img class="svg" src="assets/svg/html5.svg" alt="html5 icon">
-									</div>
-									<div class="holdsIcons">
-										<img class="svg" src="assets/svg/css3.svg" alt="css3 icon">
-									</div>
-									<div class="holdsIcons">
-										<img class="svg js" src="assets/svg/javascript.svg" alt="javascript icon">
-									</div>
+							</div>
+							<div class="languages">
+								<div class="holdsIcons">
+									<img class="svg" src="assets/svg/html5.svg" alt="html5 icon">
+								</div>
+								<div class="holdsIcons">
+									<img class="svg" src="assets/svg/css3.svg" alt="css3 icon">
+								</div>
+								<div class="holdsIcons">
+									<img class="svg js" src="assets/svg/javascript.svg" alt="javascript icon">
 								</div>
 							</div>
-							<p>
-								For this project I had to translate a Photoshop design into a fully functional frontend for a fictional client, that specialises in selling bedding and furniture for the bedroom.
-							</p>
-							<p>
-								I also had to implented all the required SEO meta tags for the products, etc. in JSON-LD format.
-							</p>
 						</div>
-					</a>
+						<ul>
+							<li>Static website for showcasing bedroom furniture.</li>
+							<li>Simple on/off toggles with JavaScript.</li>
+							<li>Translated a Photoshop design to a static webpage.</li>
+							<li>Multi level drop down menu & responsive design.</li>
+							<li>Implented all the required SEO meta tags for the products, in JSON-LD format.</li>
+						</ul>
+					</div>
 					<div class="holdsButtons">
 						<a class="button" href="https://github.com/Julicolo/embed" target="_blank" rel="noopener noreferrer">
-							View code on GitHub
+							View source
 						</a>
 						<a class="button" href="https://julicolo.github.io/embed" target="_blank" rel="noopener noreferrer">
-							Go to project
+							Demo
 						</a>
 					</div>
 				</div>
 				<div class="projectCard">
-					<a class="clickable" href="https://julicolo.github.io/first-website" target="_blank" rel="noopener noreferrer">
-						<div class="screenshot">
-							<img src="assets/projects/firstsite.png" alt="filler" width="450" height="300">
-						</div>
-						<div class="description">
-							<div class="cardTitle">
+					<div class="screenshot">
+						<a class="clickable" href="https://julicolo.github.io/first-website" target="_blank" rel="noopener noreferrer">
+							<img src="assets/projects/firstsite.jpg" alt="Embed project" width="450" height="300">
+						</a>
+					</div>
+					<div class="description">
+						<div class="cardTitle">
+							<div class="project-header">
 								<h3>CSS assignment</h3>
-								<div class="languages">
-									<div class="holdsIcons">
-										<img class="svg" src="assets/svg/html5.svg" alt="html5 icon">
-									</div>
-									<div class="holdsIcons">
-										<img class="svg" src="assets/svg/css3.svg" alt="css3 icon">
-									</div>
+							</div>
+							<div class="languages">
+								<div class="holdsIcons">
+									<img class="svg" src="assets/svg/html5.svg" alt="html5 icon">
+								</div>
+								<div class="holdsIcons">
+									<img class="svg" src="assets/svg/css3.svg" alt="css3 icon">
 								</div>
 							</div>
-							<p>
-								My first website, this was our first school project where we had to display our newly found HTML & CSS skills.
-							</p>
-							<p>
-								We had been given a list with things to implent on our websites.
-							</p>
-							<p>
-								A few examples of these are: gradient in the footer, dropdown menu, etc.
-							</p>
 						</div>
-					</a>
+						<ul>
+							<li>First ever website made, for a school project.</li>
+							<li>Had to implement all the features from a checklist.</li>
+							<li>Some examples of these are:</li>
+							<ul>
+								<li>A photo gallery, a site map</li>
+								<li>Footer with a gradient, header with your name.</li>
+								<li>Responsive, drop down menu</li>
+							</ul>
+						</ul>
+					</div>
 					<div class="holdsButtons">
 						<a class="button" href="https://github.com/Julicolo/first-website" target="_blank" rel="noopener noreferrer">
-							View code on GitHub
+							View source
 						</a>
 						<a class="button" href="https://julicolo.github.io/first-website" target="_blank" rel="noopener noreferrer">
-							Go to project
+							Demo
 						</a>
 					</div>
 				</div>
@@ -658,27 +654,23 @@
 							<div class="holdsIcons">
 								<a class="clickable" href="mailto:julio.schilders@gmail.com" 
 								target="_top">
-								<img class="svg gmail" src="assets/svg/gmail.svg" alt="gmail icon">
-								<span>Julio.Schilders@gmail.com</span>
-							</a>
-						</div>
-					</div>		
-					<section>
-						<h3>Thanks for looking at my portfolio!</h3>
-						<p>
-							Do you have a question for me, or perhaps some feedback?
-							<p>
-								<p>
-									Feel free to contact me, to let me know!
-								</p>
-							</section>
-						</div>
+									<img class="svg gmail" src="assets/svg/gmail.svg" alt="gmail icon">
+									<span>Julio.Schilders@gmail.com</span>
+								</a>
+							</div>
+						</div>		
+						<section>
+							<h3>Thanks for looking at my portfolio!</h3>
+							<p>Do you have a question for me, or perhaps some feedback?<p>
+							<p>Feel free to contact me, to let me know!</p>
+						</section>
 					</div>
 				</div>
-			</main>
-			<footer class="footer">
-				<span>&copy; Julio Schilders</span>
-			</footer>
-		</div>
-	</body>
-	</html>
+			</div>
+		</main>
+		<footer class="footer">
+			<span>&copy; Julio Schilders</span>
+		</footer>
+	</div>
+</body>
+</html>
