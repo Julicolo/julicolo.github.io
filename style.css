@@ -92,7 +92,7 @@ h3 {
 
 .description span {
 	color: var(--text);
-	font-size: 1rem;
+	font-size: 0.75rem;
 	font-style: italic;
 }
 
@@ -177,7 +177,7 @@ h3 {
 .main > div {
 	margin-bottom: 4rem;
 }
-	
+
 .about .projectCard {
 	margin-bottom: 2.5rem;
 }
@@ -250,15 +250,11 @@ h3 {
 }
 
 .cardTitle h3 {
-	font-size: 2rem;
+	font-size: 1.5rem;
 }
 
 .languages {
 	flex-flow: row wrap;
-}
-
-.cardTitle.shrink > div .holdsIcons {
-	margin: 1rem 2rem 1rem 0;
 }
 
 .about section {
@@ -398,7 +394,7 @@ h3 {
 	font-size: 1rem;
 	text-align: center;
 	outline: none;
-	box-shadow: 0px 5px 4px -4px #0000002e;
+	box-shadow: 5px 15px 10px -10px #0000002e;
 }
 
 #contact h2 {
@@ -430,7 +426,6 @@ h3 {
 	.projects {
 		justify-content: center;
 	}
-
 }
 
 @media only screen and (max-width: 900px) {
@@ -549,14 +544,14 @@ h3 {
 		justify-content: center;
 	}
 
-	.holdsIcons {
-		margin: 0.5rem;
-	}
-
 	.projects h2,
 	#contact h2,
 	.cardTitle.shrink h3 {
 		text-align: center;
+	}
+
+	#contact .projectCard .languages .holdsIcons {
+		margin: 1rem 0;
 	}
 }
 
