@@ -262,6 +262,11 @@ h3 {
 	border-bottom: 4px dotted lightgrey;
 }
 
+.about section p a {
+	color: var(--lightblue);
+	text-decoration: none;
+}
+
 .holdsIcons span {
 	padding-left: 0.5rem;
 }
