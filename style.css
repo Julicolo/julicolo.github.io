@@ -263,7 +263,7 @@ h3 {
 }
 
 .about section p a {
-	color: var(--lightblue);
+	color: var(--darkblue);
 	text-decoration: none;
 }
 
