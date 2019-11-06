@@ -414,6 +414,9 @@ h3 {
 }
 
 .footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 	height: 2rem;
 	width: 100%;
 	background: var(--darkblue);
@@ -421,7 +424,6 @@ h3 {
 
 .footer span {
 	color: white;
-	padding: 0;
 }
 
 /* Media queries for smaller screens */
