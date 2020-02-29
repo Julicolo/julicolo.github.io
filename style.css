@@ -309,15 +309,6 @@ h3 {
 	width: 2.5rem;
 }
 
-.holdsIcons img.babel {
-	width: 2.5rem;
-	background-color: #f6db55;
-}
-
-.holdsIcons img.ps {
-	background-color: rgb(2, 39, 49);
-}
-
 .holdsIcons img.mysql {
 	width: 4.5rem;
 }
@@ -407,16 +398,16 @@ h3 {
 }
 
 #contact h3 {
-	margin-top: .5rem;
+	margin-top: 0.5rem;
 	text-align: left;
 	font-weight: normal;
 	color: var(--text);
 }
 
 .footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	height: 2rem;
 	width: 100%;
 	background: var(--darkblue);
