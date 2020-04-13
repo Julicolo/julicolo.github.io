@@ -1,6 +1,6 @@
 Hello stranger, if you happen to be lost and ended up on this repo, you might have noticed that this repo does not have a master branch.. That's because GH pages is build off the master branch, and this is my old portfolio.
 
-Checkout my new one (here)[htts://jschilders.dev] :) 
+Checkout my new one [here](htts://jschilders.dev) :) 
 
 
 # Portfolio website
